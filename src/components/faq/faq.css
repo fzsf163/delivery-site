@@ -1,0 +1,15 @@
+
+.plus {
+  width: 44px;
+  height: 44px;
+}
+
+.plus rect {
+  transition: transform 250ms;
+  transform: scaleY(1) ease-in-out;
+  transform-origin: 50% 50%;
+}
+
+.minus .vertical-line {
+  transform: scaleY(0);
+}
