@@ -81,3 +81,10 @@ input[type="range"]:focus::-moz-range-thumb {
     display: none;
   }
 }
+
+@media (230px <= width <= 1023px ){
+  input[type="range"] {
+    width: 100%;
+    min-width: 150px;
+  }
+}

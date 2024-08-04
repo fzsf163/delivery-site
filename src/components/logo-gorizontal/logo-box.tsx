@@ -31,8 +31,8 @@ const logosBox = [
 
 export default function LogoBox({}: Props) {
   return (
-    <div className="i mb-[113px] mt-[90px] w-full max-w-[1920]" id="logoBox">
-      <div className="tems-center mx-auto flex w-[1320px] justify-center gap-[106px]">
+    <div className="mb-[113px] mt-[90px] w-full min-w-md overflow-x-scroll max-w-[1920]" id="logoBox">
+      <div className="mx-auto flex w-[1320px] items-center justify-center gap-[106px]">
         {logosBox.map((logo, index) => {
           return (
             <div key={index + logo.label}>

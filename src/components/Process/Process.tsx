@@ -7,7 +7,7 @@ type Props = {};
 
 export default function Process({}: Props) {
   return (
-    <div className="mx-auto mt-[158px] w-[1320px]">
+    <div className="mx-auto mt-[158px] w-[1320px] hidden xl:block">
       <div>
         <p className="plus-jakarta-sans-600 h-[45px] w-[140px] rounded-[32px] bg-[#18347B] pt-[9px] text-center text-[24px] leading-[30.24px] text-white">
           Process
@@ -20,7 +20,7 @@ export default function Process({}: Props) {
           est f
         </p>
       </div>
-      <div className="relative mt-[24px] flex h-[700px] items-start justify-between">
+      <div className="relative mt-[24px] flex h-[700px]  items-start justify-between">
         {/* card 1 */}
         <div
           style={{
@@ -29,7 +29,7 @@ export default function Process({}: Props) {
             backgroundPosition: "center center",
             objectFit: "cover",
           }}
-          className="relative top-[98px] z-50 h-[349px] w-[379px] rounded-[20px]"
+          className="relative top-[98px] z-10 h-[349px] w-[379px] rounded-[20px]"
         >
           <div className="relative h-full w-full rounded-[20px] bg-gradient-to-t from-[#18347B] to-[#D9D9D900] text-white">
             <div className="absolute bottom-0 left-0 flex flex-col items-start gap-5 p-[40px_20px] text-white">
@@ -54,7 +54,7 @@ export default function Process({}: Props) {
             backgroundPosition: "center center",
             objectFit: "cover",
           }}
-          className="relative top-[280px] z-50 h-[349px] w-[379px] rounded-[20px]"
+          className="relative top-[280px] z-10 h-[349px] w-[379px] rounded-[20px]"
         >
           <div className="relative h-full w-full rounded-[20px] bg-gradient-to-t from-[#18347B] to-[#D9D9D900] text-white">
             <div className="absolute bottom-0 left-0 flex flex-col items-start gap-5 p-[40px_20px] text-white">
@@ -79,7 +79,7 @@ export default function Process({}: Props) {
             backgroundPosition: "center center",
             objectFit: "cover",
           }}
-          className="z-50 h-[349px] w-[379px] rounded-[20px]"
+          className="z-10 h-[349px] w-[379px] rounded-[20px]"
         >
           <div className="relative h-full w-full rounded-[20px] bg-gradient-to-t from-[#18347B] to-[#D9D9D900] text-white">
             <div className="absolute bottom-0 left-0 flex flex-col items-start gap-5 p-[40px_20px] text-white">

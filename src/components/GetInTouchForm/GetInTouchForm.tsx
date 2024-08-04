@@ -13,25 +13,25 @@ export default function GetInTouchForm({}: Props) {
     <div
       style={{
         backgroundImage: `url("${formbg}")`,
-        backgroundSize: "100% 100%",
+        backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
       }}
-      className="mt-[130px] h-[656px] w-full max-w-[1920px]"
+      className="mt-[130px] h-full w-full xl:h-[656px]"
     >
       <div className="h-full w-full bg-[#18347B80] pt-[27px]">
-        <div className="mx-auto flex h-fit w-[1320px] items-center justify-center gap-[147px]">
+        <div className="mx-auto flex h-full w-full flex-wrap items-center justify-center gap-10 pb-10 lg:gap-[147px]">
           <div className="space-y-[24px]">
-            <h1 className="plus-jakarta-sans-700 h-[120px] w-[528px] text-[48px] leading-[60.48px] text-white">
+            <h1 className="plus-jakarta-sans-700 mx-auto h-auto w-[90%] text-center text-4xl text-white lg:h-[120px] lg:w-[528px] lg:text-[48px] lg:leading-[60.48px]">
               We always follow the best way of logistics{" "}
             </h1>
-            <p className="leading-[25.2px plus-jakarta-sans-400 h-[75px] w-[533px] text-[18px] text-white">
+            <p className="plus-jakarta-sans-400 mx-auto h-auto w-[80%] text-center text-lg leading-[25.2px] text-white lg:h-[75px] lg:w-[533px] lg:text-[18px]">
               Lorem ipsum dolor sit amet consectetur. Scelerisque aliquam
               laoreet est fermentum sed sit. Turpis egestas bibendum tempus
               aenean en.
             </p>
           </div>
           {/* form */}
-          <div className="h-[593px] w-[645px] rounded-[20px] bg-[#D2D2D28F] p-[33px_58px] text-white">
+          <div className="m-4 h-full w-full rounded-[20px] bg-[#D2D2D28F] p-[30px] text-white lg:h-[593px] lg:w-[645px] lg:p-[33px_58px]">
             <h1 className="plus-jakarta-sans-400 h-[30px] w-[150px] text-[24px] leading-[30.24px]">
               Personal Info
             </h1>
@@ -47,7 +47,7 @@ export default function GetInTouchForm({}: Props) {
                 type="text"
                 name="nameForm"
                 id="nameForm"
-                className="h-[40px] w-[529px] rounded-[10px] border-[1.5px] border-white bg-[#D9D9D94A] px-2"
+                className="h-[40px] w-full rounded-[10px] border-[1.5px] border-white bg-[#D9D9D94A] px-2 lg:w-[529px]"
               />
             </div>
             {/* email and phone div */}
@@ -64,7 +64,7 @@ export default function GetInTouchForm({}: Props) {
                   type="email"
                   name="emailForm"
                   id="emailForm"
-                  className="h-[40px] w-[250px] rounded-[10px] border-[1.5px] border-white bg-[#D9D9D94A] px-2"
+                  className="h-[40px] w-full rounded-[10px] border-[1.5px] border-white bg-[#D9D9D94A] px-2 lg:w-[250px]"
                 />
               </div>
               {/* phone */}
@@ -79,7 +79,7 @@ export default function GetInTouchForm({}: Props) {
                   type="number"
                   name="phoneForm"
                   id="phoneForm"
-                  className="h-[40px] w-[250px] rounded-[10px] border-[1.5px] border-white bg-[#D9D9D94A] px-2"
+                  className="h-[40px] w-full rounded-[10px] border-[1.5px] border-white bg-[#D9D9D94A] px-2 lg:w-[250px]"
                 />
               </div>
             </div>
@@ -120,14 +120,14 @@ export default function GetInTouchForm({}: Props) {
                   type="number"
                   name="weightForm"
                   id="weightForm"
-                  className="h-[40px] w-[151px] rounded-[10px] border-[1.5px] border-white bg-[#D9D9D94A] px-2"
+                  className="h-[40px] w-full rounded-[10px] border-[1.5px] border-white bg-[#D9D9D94A] px-2 lg:w-[151px]"
                   value={rangeValue}
                   onChange={(v) => setRangeValue(+v.currentTarget.value)}
                 />
               </div>
             </div>
             {/* freight & Load */}
-            <div className="flex items-center justify-start gap-[30px]">
+            <div className="flex items-center justify-start gap-5 lg:gap-[30px]">
               {/* email */}
               <div className="mt-[21px] flex flex-col space-y-[10px]">
                 <label
@@ -140,7 +140,7 @@ export default function GetInTouchForm({}: Props) {
                   type="text"
                   name="freightForm"
                   id="freightForm"
-                  className="h-[40px] w-[250px] rounded-[10px] border-[1.5px] border-white bg-[#D9D9D94A] px-2"
+                  className="h-[40px] w-full rounded-[10px] border-[1.5px] border-white bg-[#D9D9D94A] px-2 lg:w-[250px]"
                 />
               </div>
               {/* phone */}
@@ -155,13 +155,13 @@ export default function GetInTouchForm({}: Props) {
                   type="text"
                   name="loadForm"
                   id="loadForm"
-                  className="h-[40px] w-[250px] rounded-[10px] border-[1.5px] border-white bg-[#D9D9D94A] px-2"
+                  className="h-[40px] w-full rounded-[10px] border-[1.5px] border-white bg-[#D9D9D94A] px-2 lg:w-[250px]"
                 />
               </div>
             </div>
             {/* button submit */}
-            <button className="mt-[60px] h-[50px] w-[534px] rounded-[10px] bg-[#18347B] text-center">
-              <p className="plus-jakarta-sans-600 mx-auto h-[23px] w-[132px] text-[18px] leading-[22.68px]">
+            <button className="mt-[60px] h-[50px] w-full rounded-[10px] bg-[#18347B] text-center lg:w-[534px]">
+              <p className="plus-jakarta-sans-600 mx-auto h-[23px] w-full text-[18px] leading-[22.68px] lg:w-[132px]">
                 Request Quote
               </p>
             </button>

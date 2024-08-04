@@ -7,7 +7,7 @@ type Props = {};
 
 export default function SafeJourney({}: Props) {
   return (
-    <div className="mx-auto mt-[166px] flex h-[343px] w-[1320px] items-start justify-start gap-[100px] rounded-[20px] bg-[#18347B] text-white relative">
+    <div className="relative mx-auto mt-[166px] hidden h-[343px] w-[1320px] items-start justify-start gap-[100px] rounded-[20px] bg-[#18347B] text-white xl:flex">
       <div className="p-[39px_51px]">
         <h1 className="plus-jakarta-sans-700 h-[120px] w-[583px] text-[48px] leading-[60.48px]">
           We ensure safe transportation & delivery
@@ -32,7 +32,11 @@ export default function SafeJourney({}: Props) {
           className="absolute -bottom-10 right-14 z-0 h-[274.66px] w-[111.12px] -rotate-[25.6deg]"
         />
       </div>
-      <img src={beda} alt="" className="absolute -top-[67px] right-[166px] w-[373px] h-[409px]" />
+      <img
+        src={beda}
+        alt=""
+        className="absolute -top-[67px] right-[166px] h-[409px] w-[373px]"
+      />
     </div>
   );
 }

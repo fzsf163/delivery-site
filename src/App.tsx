@@ -12,21 +12,18 @@ import Faq from "./components/faq/Faq";
 import Footer from "./components/footer/Footer";
 function App() {
   return (
-    <div className="">
+    <div className="min-w-full w-full">
       <Navbar></Navbar>
       {/* this is placeholder */}
       <div
         style={{
           backgroundImage: `url("${placholder}")`,
-          backgroundSize: "100%",
+          backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
-          backgroundOrigin: "border-box",
-          // backgroundPosition: "center center",
-          objectFit: "cover",
         }}
         className="h-[50rem] w-full"
       >
-        <h1 className="mx-auto flex h-full w-full items-center justify-center bg-black/10 text-5xl text-white/50">
+        <h1 className="flex h-full flex-grow items-center justify-center bg-black/10 text-5xl text-white/50">
           Placeholder Hero
         </h1>
       </div>

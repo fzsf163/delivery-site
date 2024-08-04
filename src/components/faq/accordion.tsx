@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./faq.css";
 type Props = {
   title?: string;
@@ -8,20 +8,33 @@ type Props = {
 export const Accordion = ({ title, description }: Props) => {
   const [open, setopen] = useState<boolean>(false);
   const plusMinusRef = useRef<SVGSVGElement>(null);
+  const accordionRef = useRef<HTMLDivElement>(null);
   const toggle = () => {
     if (!plusMinusRef) return;
     plusMinusRef.current?.classList.toggle("minus");
   };
+
+  useEffect(() => {
+    if (!accordionRef) return;
+    if (open === true) {
+      accordionRef.current?.classList.add("fadeIn");
+      accordionRef.current?.classList.remove("fadeOut");
+    }
+    if (open === false) {
+      accordionRef.current?.classList.remove("fadeIn");
+      accordionRef.current?.classList.add("fadeOut");
+    }
+  }, [open]);
   return (
-    <div>
+    <div className="transition-all duration-200 ease-in-out">
       <div
         onClick={() => {
           toggle();
           setopen(!open);
         }}
-        className="flex h-[72px] w-[757px] cursor-pointer items-center justify-center gap-[39px] rounded-[58px] bg-[#FFFFFF] drop-shadow"
+        className="mx-auto flex w-fit cursor-pointer items-center justify-center gap-2 rounded-[58px] bg-[#FFFFFF] px-5 py-3 drop-shadow lg:h-[72px] lg:w-[757px] lg:gap-[39px]"
       >
-        <p className="plus-jakarta-sans-600 h-[30px] w-[612px] text-[24px] leading-[30.24px]">
+        <p className="plus-jakarta-sans-600 text-md w-full text-wrap lg:h-[30px] lg:w-[612px] lg:text-[24px] lg:leading-[30.24px]">
           {title}
         </p>{" "}
         <svg
@@ -35,11 +48,21 @@ export const Accordion = ({ title, description }: Props) => {
         </svg>
       </div>
 
-      <div
-        className={` ${open ? "mt-[24px] h-[170px] w-[757px] rounded-[20px] p-[30px_34px]" : "h-[0px] w-[757px] p-[0px]"} bg-[#FFFFFF] drop-shadow transition-all duration-500 ease-in-out`}
+      {/* <div
+        className={` ${open ? "mx-5 mt-[24px] w-[398px] rounded-[20px] p-[30px_34px] lg:h-[170px] lg:w-[757px]" : "h-[0px] w-[398px] p-[0px] lg:w-[757px]"} bg-[#FFFFFF] drop-shadow transition-all duration-500 ease-in-out`}
       >
         <p
-          className={`plus-jakarta-sans-400 transition-all duration-500 ease-in-out ${open ? "h-[50px] w-[544px] text-[18px] leading-[25.2px]" : "h-[0px] w-[544px] text-[0px] leading-[0px]"} `}
+          className={`plus-jakarta-sans-400 transition-all duration-75 ease-in-out ${open ? "h-full w-fit text-[18px] leading-[25.2px] opacity-100 lg:h-[50px] lg:w-[544px]" : "h-[0px] w-full text-[0px] leading-[0px] opacity-0 lg:w-[544px]"} `}
+        >
+          {description}
+        </p>
+      </div> */}
+      <div
+        ref={accordionRef}
+        className={`mx-5 mt-[24px] w-[398px] rounded-[20px] bg-[#FFFFFF] p-[30px_34px] drop-shadow lg:h-[170px] lg:w-[757px]`}
+      >
+        <p
+          className={`plus-jakarta-sans-400 h-full w-fit text-[18px] leading-[25.2px] lg:h-[50px] lg:w-[544px]`}
         >
           {description}
         </p>

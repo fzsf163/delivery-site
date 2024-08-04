@@ -15,18 +15,18 @@ export default function Services({}: Props) {
         backgroundPosition: "center bottom",
         objectFit: "cover",
       }}
-      className="h-[1010px] bg-[#EFF4FF] pt-[90px]"
+      className="h-full w-full bg-[#EFF4FF] pt-[90px] xl:h-[1010px]"
     >
       <div className="mx-auto flex w-fit flex-col items-center">
         <p className="plus-jakarta-sans-600 h-[45px] w-[140px] rounded-[36px] bg-[#18347B] pt-[8px] text-center text-[24px] leading-[30.24px] text-white">
           Services
         </p>
-        <h5 className="plus-jakarta-sans-700 mt-[19px] h-[120px] w-[424px] text-center text-[48px] leading-[60.48px]">
+        <h5 className="plus-jakarta-sans-700 mt-[19px] h-[120px] w-fit lg:w-[424px] text-center text-[48px] leading-[60.48px]">
           Our wide range of services
         </h5>
       </div>
 
-      <div className="mt-[51px] flex items-center justify-center gap-[30px]">
+      <div className="mt-[51px] flex flex-wrap pb-10 items-center justify-center gap-[30px]">
         <div
           style={{
             backgroundImage: `url("${img1}")`,
