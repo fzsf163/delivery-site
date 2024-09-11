@@ -1,9 +1,8 @@
-import img from "../../assets/transport-logisticsproducts1.png";
+import img from "../../assets/transport-logisticsproducts1.webp";
 import img2 from "../../assets/Maskgroup.png";
 import "./numberCard.css";
-type Props = {};
 
-export default function NumberCard({}: Props) {
+export default function NumberCard() {
   return (
     <div
       style={{
@@ -13,7 +12,7 @@ export default function NumberCard({}: Props) {
         backgroundOrigin: "border-box",
         backgroundPosition: "center center",
       }}
-      className="mt-[80px] h-full w-full mx-auto  xl:h-[493px]"
+      className="mx-auto mt-[80px] h-full w-full xl:h-[493px]"
     >
       <div className="flex h-full w-full flex-wrap items-center justify-center gap-[31px] bg-blue-800/50 px-2 py-5 text-white">
         <div className="gradient-border h-full w-[186px] rounded-[20px] bg-[#DFDFDF4D] p-[22px] lg:h-[228px] lg:w-[307px]">

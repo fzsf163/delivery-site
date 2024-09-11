@@ -1,4 +1,4 @@
-import img2 from "../../assets/constraints/Rectangle 3(1).png";
+import img2 from "../../assets/constraints/Rectangle 3(1).webp";
 
 type Props = {};
 

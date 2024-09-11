@@ -1,10 +1,8 @@
-import l1 from "../../assets/logo/Logo.png";
 import l2 from "../../assets/logo/Logo-1.png";
 import l3 from "../../assets/logo/Logo-2.png";
 import l4 from "../../assets/logo/Logo-3.png";
 import l5 from "../../assets/logo/Logo-4.png";
-
-type Props = {};
+import l1 from "../../assets/logo/Logo.png";
 
 const logosBox = [
   {
@@ -29,10 +27,13 @@ const logosBox = [
   },
 ];
 
-export default function LogoBox({}: Props) {
+export default function LogoBox() {
   return (
-    <div className="mb-[113px] mt-[90px] w-full min-w-md overflow-x-scroll max-w-[1920]" id="logoBox">
-      <div className="mx-auto flex w-[1320px] items-center justify-center gap-[106px]">
+    <div
+      className="min-w-md mb-[113px] mt-[90px] w-full max-w-[1920] overflow-x-auto"
+      id="logoBox"
+    >
+      <div className="mx-auto flex w-[1320px] items-center justify-center gap-[106px] pb-5">
         {logosBox.map((logo, index) => {
           return (
             <div key={index + logo.label}>

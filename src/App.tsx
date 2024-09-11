@@ -4,7 +4,7 @@ import LogoBox from "./components/logo-gorizontal/logo-box";
 import Transportation from "./components/tranportation/Transportation";
 import NumberCard from "./components/number-card/numberCard";
 import Services from "./components/services/services";
-import placholder from "./assets/heroimg/tom-barrett-M0AWNxnLaMw-unsplash.jpg";
+import placholder from "./assets/heroimg/tom-barrett-M0AWNxnLaMw-unsplash.webp";
 import SafeJourney from "./components/safe-journey/SafeJourney";
 import Process from "./components/Process/Process";
 import GetInTouchForm from "./components/GetInTouchForm/GetInTouchForm";
@@ -12,8 +12,8 @@ import Faq from "./components/faq/Faq";
 import Footer from "./components/footer/Footer";
 function App() {
   return (
-    <div className="min-w-full w-full">
-      <Navbar></Navbar>
+    <div className="w-full min-w-full">
+      <Navbar />
       {/* this is placeholder */}
       <div
         style={{
@@ -27,15 +27,15 @@ function App() {
           Placeholder Hero
         </h1>
       </div>
-      <LogoBox></LogoBox>
-      <Transportation></Transportation>
-      <NumberCard></NumberCard>
-      <Services></Services>
-      <SafeJourney></SafeJourney>
-      <Process></Process>
-      <GetInTouchForm></GetInTouchForm>
-      <Faq></Faq>
-      <Footer></Footer>
+      <LogoBox />
+      <Transportation />
+      <NumberCard />
+      <Services />
+      <SafeJourney />
+      <Process />
+      <GetInTouchForm />
+      <Faq />
+      <Footer />
     </div>
   );
 }
