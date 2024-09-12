@@ -1,0 +1,11 @@
+.before-content::before {
+  content: "";
+  position: absolute;
+  border-bottom-left-radius: 10%;
+  box-shadow: -30px 30px 0 #8e8e8e85;
+  width: 40px;
+  height: 40px;
+  /* background: #000; */
+  left: 20.1rem;
+  top: 1.76rem;
+}
