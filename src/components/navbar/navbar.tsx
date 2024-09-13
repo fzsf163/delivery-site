@@ -50,7 +50,7 @@ export default function Navbar() {
         <div className="plus-jakarta-sans-600 hidden items-center justify-center gap-12 py-[39px] lg:flex">
           {menuItems.map((menu) => {
             return (
-              <Link to={menu.href}>
+              <Link to={menu.href} key={menu.label + menu.id}>
                 <div
                   key={menu.label + menu.id}
                   className="group relative cursor-pointer"
@@ -95,7 +95,7 @@ export default function Navbar() {
         >
           {menuItems.map((m) => {
             return (
-              <Link to={m.href}>
+              <Link to={m.href} key={m.label + m.id}>
                 <div
                   key={m.id}
                   className="flex flex-col items-start pl-[3rem] pt-[3rem]"
