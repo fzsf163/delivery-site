@@ -22,7 +22,7 @@ function ExploreCompany() {
           <img
             src={img}
             alt="company explore image"
-            className="mx-auto w-[80%] rounded xl:h-[552px] h-[300px]"
+            className="mx-auto w-[80%] md:w-full rounded xl:h-[552px] h-[300px]"
           />
         </div>
       </div>
