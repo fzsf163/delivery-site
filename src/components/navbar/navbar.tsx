@@ -1,26 +1,32 @@
 import { useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import "./navbar.css";
 
 const menuItems = [
   {
     label: "service",
     id: 1,
+    href: "/",
   },
   {
     label: "company",
     id: 2,
+    href: "company",
   },
   {
     label: "features",
     id: 3,
+    href: "features",
   },
   {
     label: "news",
     id: 4,
+    href: "news",
   },
   {
     label: "contact",
     id: 5,
+    href: "contact",
   },
 ];
 export default function Navbar() {
@@ -44,15 +50,17 @@ export default function Navbar() {
         <div className="plus-jakarta-sans-600 hidden items-center justify-center gap-12 py-[39px] lg:flex">
           {menuItems.map((menu) => {
             return (
-              <div
-                key={menu.label + menu.id}
-                className="group relative cursor-pointer"
-              >
-                <p className="text-[18px] capitalize leading-[22.68px]">
-                  <a href="#logoBox">{menu.label}</a>
-                </p>
-                <span className="absolute -bottom-2 left-0 h-1 w-0 bg-blue-300 transition-all duration-500 ease-in-out group-hover:w-full" />
-              </div>
+              <Link to={menu.href}>
+                <div
+                  key={menu.label + menu.id}
+                  className="group relative cursor-pointer"
+                >
+                  <p className="text-[18px] capitalize leading-[22.68px]">
+                    {menu.label}
+                  </p>
+                  <span className="absolute -bottom-2 left-0 h-1 w-0 bg-blue-300 transition-all duration-500 ease-in-out group-hover:w-full" />
+                </div>
+              </Link>
             );
           })}
         </div>
@@ -87,19 +95,21 @@ export default function Navbar() {
         >
           {menuItems.map((m) => {
             return (
-              <div
-                key={m.id}
-                className="flex flex-col items-start pl-[3rem] pt-[3rem]"
-              >
-                <p
+              <Link to={m.href}>
+                <div
                   key={m.id}
-                  className={
-                    "text-lg capitalize transition-all duration-500 ease-in-out md:text-[4rem]"
-                  }
+                  className="flex flex-col items-start pl-[3rem] pt-[3rem]"
                 >
-                  {m.label}
-                </p>
-              </div>
+                  <p
+                    key={m.id}
+                    className={
+                      "text-lg capitalize transition-all duration-500 ease-in-out md:text-[4rem]"
+                    }
+                  >
+                    {m.label}
+                  </p>
+                </div>
+              </Link>
             );
           })}
         </div>
