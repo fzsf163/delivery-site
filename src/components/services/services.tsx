@@ -1,11 +1,9 @@
+import img3 from "../../assets/jumbo-jet-flying-sky1.png";
 import m2 from "../../assets/Mask-group2.png";
 import img1 from "../../assets/transport-logistics-concept(1)1.png";
 import img2 from "../../assets/transport-logistics-concept1.png";
-import img3 from "../../assets/jumbo-jet-flying-sky1.png";
 
-type Props = {};
-
-export default function Services({}: Props) {
+export default function Services() {
   return (
     <div
       style={{
@@ -21,12 +19,12 @@ export default function Services({}: Props) {
         <p className="plus-jakarta-sans-600 h-[45px] w-[140px] rounded-[36px] bg-[#18347B] pt-[8px] text-center text-[24px] leading-[30.24px] text-white">
           Services
         </p>
-        <h5 className="plus-jakarta-sans-700 mt-[19px] h-[120px] w-fit lg:w-[424px] text-center text-[48px] leading-[60.48px]">
+        <h5 className="plus-jakarta-sans-700 mt-[19px] h-[120px] w-fit text-center text-[48px] leading-[60.48px] lg:w-[424px]">
           Our wide range of services
         </h5>
       </div>
 
-      <div className="mt-[51px] flex flex-wrap pb-10 items-center justify-center gap-[30px]">
+      <div className="mt-[51px] flex flex-wrap items-center justify-center gap-[30px] pb-10">
         <div
           style={{
             backgroundImage: `url("${img1}")`,
