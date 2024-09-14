@@ -16,7 +16,7 @@ export default function GetInTouchForm() {
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
       }}
-      className="mt-[130px] h-full w-full xl:h-[656px]"
+      className="getInTouch mt-[130px] h-full w-full xl:h-[656px]"
     >
       <div className="h-full w-full bg-[#18347B80] pt-[27px]">
         <div className="mx-auto flex h-full w-full flex-wrap items-center justify-center gap-10 pb-10 lg:gap-[147px]">

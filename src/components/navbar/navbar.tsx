@@ -37,14 +37,15 @@ export default function Navbar() {
     menuRef.current?.classList.toggle("on");
     setopen(!open);
   };
+
   return (
     <div className="fixed left-0 top-0 z-50 h-[68px] w-full bg-[rgba(106,106,106,0.52)] text-white backdrop-blur-sm lg:h-[100px]">
-      <div className="mx-auto hidden w-full items-center justify-center gap-5 lg:flex xl:gap-[129px]">
+      <div className="mx-auto hidden w-full items-center justify-center gap-5 lg:flex lg:gap-16 xl:gap-[129px]">
         <div className="w-fit">
           <img
             src="/upexworld.png"
             alt="upexworld logo"
-            className="h-[58px] w-[265px]"
+            className="h-[2rem] w-[100%] xl:h-[58px] xl:w-[265px]"
           />
         </div>
         <div className="plus-jakarta-sans-600 hidden items-center justify-center gap-12 py-[39px] lg:flex">
@@ -79,7 +80,7 @@ export default function Navbar() {
           <img
             src="/upexworld.png"
             alt="upexworld logo"
-            className="h-[3rem] w-[100%]"
+            className="h-[2rem] w-[100%]"
           />
         </div>
         <div className="size-[44px] cursor-pointer rounded-sm bg-bg-color">
@@ -95,7 +96,7 @@ export default function Navbar() {
         >
           {menuItems.map((m) => {
             return (
-              <Link to={m.href} key={m.label + m.id}>
+              <Link to={m.href} key={m.label + m.id} onClick={toggleMenu}>
                 <div
                   key={m.id}
                   className="flex flex-col items-start pl-[3rem] pt-[3rem]"
