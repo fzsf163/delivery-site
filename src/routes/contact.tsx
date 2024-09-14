@@ -1,6 +1,6 @@
 import BoxForContact from "../components/contact/contactBoxes";
 import ContactHero from "../components/contact/contactHero";
-import MapOfLocation from "./map";
+import MapOfLocation from "../components/contact/map";
 
 function Contact() {
   return (
