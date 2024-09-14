@@ -5,7 +5,7 @@ export default function Transportation() {
     <div className="w- mx-auto flex max-w-[1320px] flex-wrap items-center justify-center lg:flex-nowrap">
       <div>
         <div className="mx-auto h-[45px] w-fit rounded-[36px] bg-[#18347B] text-center lg:w-[370px]">
-          <p className="plus-jakarta-sans-600 p-[5px_20px_10px_15px] text-[24px] leading-[30.24px] text-white">
+          <p className="plus-jakarta-sans-600 sm:p-[5px_20px_10px_15px] text-md py-3 px-4 sm:text-[24px] sm:leading-[30.24px] text-white">
             Our constrain Transportation
           </p>
         </div>
