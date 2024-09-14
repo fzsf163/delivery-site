@@ -1,6 +1,6 @@
-import closeUpOffice from "../../assets/contact/boxes_imag/closeup-image-office-phone.webp";
+import closeUpOffice from "../../assets/contact/boxes_imag/closeup-image-office-phone (1).webp";
 import emailMsg from "../../assets/contact/boxes_imag/message-online-chat-social-text-concept 1.webp";
-import twoGuys from "../../assets/contact/boxes_imag/two-indian-business-man-suits-sitting-office-cafe-looking-laptop-drinking-coffee.webp";
+import twoGuys from "../../assets/contact/boxes_imag/two-indian-business-man-suits-sitting-office-cafe-looking-laptop-drinking-coffee (1).webp";
 
 const boxes = [
   {
@@ -29,7 +29,7 @@ function BoxForContact() {
         return (
           <div key={key} className="relative max-w-[20rem]">
             <img src={b.img} className="h-full w-full"></img>
-            <div className="absolute bottom-0 flex h-fit w-full flex-col items-center justify-center gap-4 rounded-md bg-white p-4 text-center font-bold shadow">
+            <div className="absolute bottom-0 flex h-fit w-full flex-col items-center justify-center gap-4 rounded-md bg-white p-6 text-center font-bold shadow">
               <p className="text-center text-xl">{b.titleText}</p>
               <div className="w-[80%]">
                 <p className="text-sm">{b.des}</p>
