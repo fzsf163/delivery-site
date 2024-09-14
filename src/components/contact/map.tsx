@@ -1,4 +1,4 @@
-import map from "../assets/contact/map/image 1.webp";
+import map from "../../assets/contact/map/image 1.webp";
 
 function MapOfLocation() {
   return (
