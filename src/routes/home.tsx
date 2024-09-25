@@ -10,7 +10,6 @@ import Transportation from "../components/tranportation/Transportation";
 function Home() {
   return (
     <div>
-      {" "}
       <HeroSection></HeroSection>
       <LogoBox />
       <Transportation />

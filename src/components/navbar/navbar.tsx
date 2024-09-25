@@ -13,16 +13,7 @@ const menuItems = [
     id: 2,
     href: "company",
   },
-  {
-    label: "features",
-    id: 3,
-    href: "features",
-  },
-  {
-    label: "news",
-    id: 4,
-    href: "news",
-  },
+
   {
     label: "contact",
     id: 5,

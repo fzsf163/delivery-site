@@ -2,9 +2,7 @@ import placholder from "../../assets/heroimg/transport-logistics-products (1) 1.
 import "./hero.css";
 function HeroSection() {
   return (
-    <div
-      className="grid h-[40rem] w-full sm:h-[50rem]"
-    >
+    <div className="grid h-[40rem] w-full sm:h-fit">
       <img
         src={placholder}
         alt=""
