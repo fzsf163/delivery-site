@@ -37,7 +37,9 @@ function HeroSection() {
                 type="button"
                 className="plus-jakarta-sans-600 rounded-md bg-bg-color px-6 py-3 text-xl text-white sm:w-fit"
               >
-                <span className="hidden xl:block">Track Shipment Now</span>
+                <span className="hidden text-nowrap xl:inline">
+                  Track Shipment Now
+                </span>
                 <span className="block text-xs sm:text-lg xl:hidden">Go</span>
               </button>
             </div>
