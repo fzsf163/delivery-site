@@ -13,25 +13,23 @@ export default function GetInTouchForm() {
   async function onSubmit(formdata: FormEvent<HTMLFormElement>) {
     formdata.preventDefault();
     const formData = new FormData(formdata.currentTarget);
-    console.log("🚀 ~ onSubmit ~ formData:", formData);
     const name = formData.get("nameForm");
     const email = formData.get("emailForm");
     const phone = formData.get("phoneForm");
     const weight = formData.get("weightForm");
     const freightType = formData.get("freightForm");
     const load = formData.get("loadForm");
-    console.log({ name, email, phone, weight, freightType, load });
+
+    const data = JSON.stringify({
+      name: name,
+      email: email,
+      phone: phone,
+      weight: `${weight} KGs`,
+      freight: freightType,
+      load: load,
+    });
     try {
-      const v = await axios.post("https://api.upexworldbd.com/quota/", {
-        data: JSON.stringify({
-          name: name,
-          email: email,
-          phone: phone,
-          weight: `${weight} KGs`,
-          freight: freightType,
-          load: load,
-        }),
-      });
+      const v = await axios.post("https://api.upexworldbd.com/quota/", data);
       console.log(v.data);
     } catch (error) {
       console.log("🚀 ~ onSubmit ~ error:", error);
