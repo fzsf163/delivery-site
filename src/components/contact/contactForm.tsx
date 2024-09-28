@@ -1,7 +1,8 @@
 import axios from "axios";
-import { FormEvent } from "react";
+import { FormEvent, useState } from "react";
 
 function ContactForm() {
+  const [success, setSuccess] = useState("");
   async function onSubmit(formdata: FormEvent<HTMLFormElement>) {
     formdata.preventDefault();
     const formData = new FormData(formdata.currentTarget);
@@ -17,8 +18,27 @@ function ContactForm() {
     });
     try {
       const v = await axios.post("https://api.upexworldbd.com/contact/", data);
-      console.log(v.data);
+      if (v.data.message === "Email sent successfully") {
+        setSuccess(v.data.message);
+        let count = 10;
+        const countdown = setInterval(() => {
+          setSuccess(
+            v.data.message + " " + "(" + String((count = count - 1)) + ")",
+          );
+          console.log(count);
+          if (count === 0) {
+            clearInterval(countdown);
+            setSuccess("");
+          }
+        }, 1000);
+      }
     } catch (error) {
+      if (error) {
+        setSuccess(String(error));
+        setTimeout(() => {
+          setSuccess("");
+        }, 2000);
+      }
       console.log("🚀 ~ onSubmit ~ error:", error);
     }
   }
@@ -45,12 +65,14 @@ function ContactForm() {
                   type="text"
                   placeholder="Full Name"
                   className="h-12 w-full rounded-md outline outline-1 outline-[#68686896]"
+                  required
                 />
                 <input
                   name="emailaddressBox"
                   type="text"
                   placeholder="Email Address"
                   className="h-12 w-full rounded-md outline outline-1 outline-[#68686896]"
+                  required
                 />
               </div>
               <input
@@ -58,6 +80,7 @@ function ContactForm() {
                 type="text"
                 placeholder="Subject"
                 className="h-12 w-full rounded-md outline outline-1 outline-[#68686896]"
+                required
               />
               <textarea
                 name="commentBox"
@@ -65,13 +88,19 @@ function ContactForm() {
                 cols={40}
                 placeholder="Message"
                 className="w-full rounded-md outline outline-1 outline-[#68686896]"
+                required
               ></textarea>
             </div>
             <button
               type="submit"
-              className="plus-jakarta-sans-600 h-[45px] w-[158px] rounded-[10px] bg-bg-color p-[10px_20px_10px_20px] leading-[25.2px] text-white"
+              className="plus-jakarta-sans-600 h-[45px] w-fit rounded-[10px] bg-bg-color p-[10px_20px_10px_20px] leading-[25.2px] text-white disabled:bg-text-color/50"
+              disabled={success === "" ? false : true}
             >
-              Submit
+              {success === "" ? (
+                <p>Submit</p>
+              ) : (
+                <p className="w-full">{success}</p>
+              )}
             </button>
           </div>
         </form>

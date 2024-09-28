@@ -9,6 +9,7 @@ export default function GetInTouchForm() {
   const MIN_VALUE = 0;
   const MAX_VALUE = 1000;
   const inputRangeRef = useRef<HTMLInputElement>(null);
+  const [success, setSuccess] = useState("");
   //   let RATIO = 362 / MAX_VALUE; // 362 is in pixel, width of slider
   async function onSubmit(formdata: FormEvent<HTMLFormElement>) {
     formdata.preventDefault();
@@ -30,8 +31,28 @@ export default function GetInTouchForm() {
     });
     try {
       const v = await axios.post("https://api.upexworldbd.com/quota/", data);
+      if (v.data.message === "Email sent successfully") {
+        setSuccess(v.data.message);
+        let count = 10;
+        const countdown = setInterval(() => {
+          setSuccess(
+            v.data.message + " " + "(" + String((count = count - 1)) + ")",
+          );
+          console.log(count);
+          if (count === 0) {
+            clearInterval(countdown);
+            setSuccess("");
+          }
+        }, 1000);
+      }
       console.log(v.data);
     } catch (error) {
+      if (error) {
+        setSuccess(String(error));
+        setTimeout(() => {
+          setSuccess("");
+        }, 2000);
+      }
       console.log("🚀 ~ onSubmit ~ error:", error);
     }
   }
@@ -75,6 +96,7 @@ export default function GetInTouchForm() {
                   name="nameForm"
                   id="nameForm"
                   className="h-[40px] w-full rounded-[10px] border-[1.5px] border-white bg-[#D9D9D94A] px-2 lg:w-[529px]"
+                  required
                 />
               </div>
               {/* email and phone div */}
@@ -92,6 +114,7 @@ export default function GetInTouchForm() {
                     name="emailForm"
                     id="emailForm"
                     className="h-[40px] w-full rounded-[10px] border-[1.5px] border-white bg-[#D9D9D94A] px-2 lg:w-[250px]"
+                    required
                   />
                 </div>
                 {/* phone */}
@@ -107,6 +130,7 @@ export default function GetInTouchForm() {
                     name="phoneForm"
                     id="phoneForm"
                     className="h-[40px] w-full rounded-[10px] border-[1.5px] border-white bg-[#D9D9D94A] px-2 lg:w-[250px]"
+                    required
                   />
                 </div>
               </div>
@@ -163,6 +187,7 @@ export default function GetInTouchForm() {
                     id="weightForm"
                     className="h-[40px] rounded-[10px] border-[1.5px] border-white bg-[#D9D9D94A] px-2 lg:w-[151px]"
                     value={rangeValue}
+                    required
                     onChange={(v) => {
                       setRangeValue(+v.currentTarget.value);
                       setRatio(362 / MAX_VALUE);
@@ -185,6 +210,7 @@ export default function GetInTouchForm() {
                     name="freightForm"
                     id="freightForm"
                     className="h-[40px] w-full rounded-[10px] border-[1.5px] border-white bg-[#D9D9D94A] px-2 lg:w-[250px]"
+                    required
                   />
                 </div>
                 {/* phone */}
@@ -200,17 +226,25 @@ export default function GetInTouchForm() {
                     name="loadForm"
                     id="loadForm"
                     className="h-[40px] w-full rounded-[10px] border-[1.5px] border-white bg-[#D9D9D94A] px-2 lg:w-[250px]"
+                    required
                   />
                 </div>
               </div>
               {/* button submit */}
               <button
                 type="submit"
-                className="mt-[40px] h-[50px] w-full rounded-[10px] bg-[#18347B] text-center lg:w-[534px]"
+                className="mt-[40px] h-[50px] w-full rounded-[10px] bg-[#18347B] text-center disabled:bg-text-color/50 lg:w-[534px]"
+                disabled={success === "" ? false : true}
               >
-                <p className="plus-jakarta-sans-600 mx-auto h-[23px] w-full text-[18px] leading-[22.68px] lg:w-[132px]">
-                  Request Quote
-                </p>
+                {success === "" ? (
+                  <p className="plus-jakarta-sans-600 mx-auto h-[23px] w-full text-[18px] leading-[22.68px] lg:w-[132px]">
+                    Request Quote
+                  </p>
+                ) : (
+                  <p className="plus-jakarta-sans-600 mx-auto h-[23px] w-full text-nowrap text-[18px] leading-[22.68px]">
+                    {success}
+                  </p>
+                )}
               </button>
             </div>
           </div>
