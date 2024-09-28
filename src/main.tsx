@@ -7,6 +7,7 @@ import Copmany from "./routes/company.tsx";
 import Contact from "./routes/contact.tsx";
 import Home from "./routes/home.tsx";
 import ErrorPage from "./routes/notfound.tsx";
+import Service from "./routes/service.tsx";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: "contact",
         element: <Contact></Contact>,
+      },
+      {
+        path: "service",
+        element: <Service></Service>,
       },
     ],
   },

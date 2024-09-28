@@ -4,9 +4,14 @@ import "./navbar.css";
 
 const menuItems = [
   {
-    label: "service",
+    label: "home",
     id: 1,
     href: "/",
+  },
+  {
+    label: "service",
+    id: 1,
+    href: "service",
   },
   {
     label: "company",
@@ -33,11 +38,13 @@ export default function Navbar() {
     <div className="fixed left-0 top-0 z-50 h-[68px] w-full bg-[rgba(106,106,106,0.52)] text-white backdrop-blur-sm lg:h-[100px]">
       <div className="mx-auto hidden w-full items-center justify-center gap-5 lg:flex lg:gap-16 xl:gap-[129px]">
         <div className="w-fit">
-          <img
-            src="/upexworld.png"
-            alt="upexworld logo"
-            className="h-[2rem] w-[100%] xl:h-[58px] xl:w-[265px]"
-          />
+          <Link to="/">
+            <img
+              src="/upexworld.png"
+              alt="upexworld logo"
+              className="h-[2rem] w-[100%] xl:h-[58px] xl:w-[265px]"
+            />
+          </Link>
         </div>
         <div className="plus-jakarta-sans-600 hidden items-center justify-center gap-12 py-[39px] lg:flex">
           {menuItems.map((menu) => {
