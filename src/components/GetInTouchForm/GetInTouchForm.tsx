@@ -206,7 +206,7 @@ export default function GetInTouchForm() {
               {/* button submit */}
               <button
                 type="submit"
-                className="mt-[60px] h-[50px] w-full rounded-[10px] bg-[#18347B] text-center lg:w-[534px]"
+                className="mt-[40px] h-[50px] w-full rounded-[10px] bg-[#18347B] text-center lg:w-[534px]"
               >
                 <p className="plus-jakarta-sans-600 mx-auto h-[23px] w-full text-[18px] leading-[22.68px] lg:w-[132px]">
                   Request Quote
