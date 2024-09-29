@@ -2,7 +2,7 @@ import img from "../../assets/contact/aerial-view-container-cargo-ship-sea 2.web
 
 function ContactHero() {
   return (
-    <div className="grid h-[20rem] w-full sm:h-[594px]">
+    <div className="grid h-[20rem] w-full sm:h-full">
       <img
         src={img}
         alt=""

@@ -1,7 +1,7 @@
 import img from "../../assets/compnay/transport-logistics-concept (2) 1.webp";
 function CompanyHero() {
   return (
-    <div className="grid h-[20rem] w-full sm:h-[594px]">
+    <div className="grid h-[20rem] w-full sm:h-full">
       <img
         src={img}
         alt=""

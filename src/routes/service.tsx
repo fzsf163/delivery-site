@@ -1,12 +1,12 @@
 import GetInTouchForm from "../components/GetInTouchForm/GetInTouchForm";
+import ServiceDetails from "../components/service/serviceDetails";
 import ServiceHero from "../components/service/servicehero";
-import Services from "../components/services/services";
 
 function Service() {
   return (
     <div>
-      <ServiceHero/>
-      <Services />
+      <ServiceHero />
+      <ServiceDetails />
       <GetInTouchForm />
     </div>
   );

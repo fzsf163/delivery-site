@@ -68,7 +68,7 @@ export default function GetInTouchForm() {
     >
       <form onSubmit={(e) => onSubmit(e)}>
         <div className="h-full w-full bg-[#18347B80] py-5 sm:p-10 lg:py-4">
-          <div className="mx-auto flex h-full w-full flex-wrap items-center justify-center gap-10 lg:gap-[147px]">
+          <div className="mx-auto flex h-full w-full flex-wrap items-center justify-center gap-5 xl:gap-[147px]">
             <div className="space-y-[24px]">
               <h1 className="plus-jakarta-sans-700 mx-auto h-auto w-[90%] text-center text-4xl text-white lg:h-[120px] lg:w-[528px] lg:text-[48px] lg:leading-[60.48px]">
                 We always follow the best way of logistics{" "}
