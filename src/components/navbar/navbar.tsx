@@ -64,12 +64,14 @@ export default function Navbar() {
           })}
         </div>
         <div className="hidden lg:block">
-          <button
-            type="button"
-            className="plus-jakarta-sans-600 h-[45px] w-[158px] rounded-[10px] bg-bg-color p-[10px_20px_10px_20px] leading-[25.2px]"
-          >
-            Get a Quota
-          </button>
+          <a href={"#getQuote"}>
+            <button
+              type="button"
+              className="plus-jakarta-sans-600 h-[45px] w-[158px] rounded-[10px] bg-bg-color p-[10px_20px_10px_20px] leading-[25.2px]"
+            >
+              Get a Quota
+            </button>
+          </a>
         </div>
       </div>
       {/* mobile menu */}
@@ -82,7 +84,6 @@ export default function Navbar() {
           />
         </div>
         <div className="size-[44px] cursor-pointer rounded-sm bg-bg-color">
-          {/* biome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
           <div ref={menuRef} id="toggle" onClick={toggleMenu}>
             <div className="one" />
             <div className="two" />

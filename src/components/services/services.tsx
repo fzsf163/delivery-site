@@ -19,8 +19,9 @@ export default function Services() {
         <p className="plus-jakarta-sans-600 h-[45px] w-[140px] rounded-[36px] bg-[#18347B] pt-[8px] text-center text-[24px] leading-[30.24px] text-white">
           Services
         </p>
-        <h5 className="plus-jakarta-sans-700 mt-[19px] h-[120px] w-fit text-center text-[48px] leading-[60.48px] lg:w-[424px]">
-          Our wide range of services
+        <h5 className="plus-jakarta-sans-700 mt-[19px] h-[120px] w-fit text-center text-[28px] leading-[60.48px] lg:w-[70%]">
+          Welcome to Upex World BD! We make shipping your packages and documents
+          easy and fast. Here’s what we can do for you
         </h5>
       </div>
 
@@ -44,8 +45,9 @@ export default function Services() {
                 Land Freight Transportation
               </p>
               <p className="plus-jakarta-sans-400 text-[18px] leading-[25.2px]">
-                Lorem ipsum dolor sit amet consectetur. Scelerisque aliquam
-                laoreet est f
+                For deliveries that don’t need to go by air, we also offer land
+                transport. We use trucks to safely get your packages where they
+                need to go, whether it’s nearby or far away.
               </p>
             </div>
           </div>
@@ -70,8 +72,9 @@ export default function Services() {
                 Air Freight Transportation
               </p>
               <p className="plus-jakarta-sans-400 text-[18px] leading-[25.2px]">
-                Lorem ipsum dolor sit amet consectetur. Scelerisque aliquam
-                laoreet est f
+                If you need to send something quickly, our air freight service
+                is perfect! We’ll help you get your packages on a plane, so they
+                can reach their destination fast.
               </p>
             </div>
           </div>

@@ -64,6 +64,7 @@ export default function GetInTouchForm() {
         backgroundRepeat: "no-repeat",
       }}
       className="getInTouch mt-[130px] h-full w-full xl:h-[656px]"
+      id="getQuote"
     >
       <form onSubmit={(e) => onSubmit(e)}>
         <div className="h-full w-full bg-[#18347B80] py-5 sm:p-10 lg:py-4">
@@ -73,9 +74,8 @@ export default function GetInTouchForm() {
                 We always follow the best way of logistics{" "}
               </h1>
               <p className="plus-jakarta-sans-400 mx-auto h-auto w-[80%] text-center text-lg leading-[25.2px] text-white lg:h-[75px] lg:w-[533px] lg:text-[18px]">
-                Lorem ipsum dolor sit amet consectetur. Scelerisque aliquam
-                laoreet est fermentum sed sit. Turpis egestas bibendum tempus
-                aenean en.
+                We make sure your packages are shipped safely and on time, so
+                you can relax and trust us with your deliveries!
               </p>
             </div>
             {/* form */}

@@ -13,9 +13,9 @@ function HeroSection() {
           <h1 className="plus-jakarta-sans-700 text-center text-2xl text-white sm:w-[70%] sm:text-left sm:text-4xl lg:text-6xl">
             Get ready for a wider expansion of your business
           </h1>
-          <p className="plus-jakarta-sans-500 text-md text-center text-white sm:w-[50%] sm:text-left sm:text-xl">
-            Lorem ipsum dolor sit amet consectetur. Scelerisque aliquam laoreet
-            est fermentum sed sit. Turpis egestas bibendum tempus aenean en.
+          <p className="plus-jakarta-sans-500 text-md text-center text-white sm:w-[60%] sm:text-left sm:text-xl">
+            With our fast and easy shipping. Reach more customers around the
+            world quickly and safely with our trusted services.
           </p>
           <div className="mx-auto flex h-fit w-full flex-col gap-4 rounded-lg border border-white/50 bg-[#8E8E8E85] p-2 sm:mx-0 sm:p-10">
             <div className="flex w-full items-center text-center sm:w-fit">

@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import "./faq.css";
 type Props = {
   title?: string;
@@ -14,17 +14,6 @@ export const Accordion = ({ title, description }: Props) => {
     plusMinusRef.current?.classList.toggle("minus");
   };
 
-  useEffect(() => {
-    if (!accordionRef) return;
-    if (open === true) {
-      accordionRef.current?.classList.add("fadeIn");
-      accordionRef.current?.classList.remove("fadeOut");
-    }
-    if (open === false) {
-      accordionRef.current?.classList.remove("fadeIn");
-      accordionRef.current?.classList.add("fadeOut");
-    }
-  }, [open]);
   return (
     <div className="transition-all duration-200 ease-in-out">
       <div
@@ -47,25 +36,11 @@ export const Accordion = ({ title, description }: Props) => {
           <rect className="horizontal-line" y="70" width="160" height="20" />
         </svg>
       </div>
-
-      {/* <div
-        className={` ${open ? "mx-5 mt-[24px] w-[398px] rounded-[20px] p-[30px_34px] lg:h-[170px] lg:w-[757px]" : "h-[0px] w-[398px] p-[0px] lg:w-[757px]"} bg-[#FFFFFF] drop-shadow transition-all duration-500 ease-in-out`}
-      >
-        <p
-          className={`plus-jakarta-sans-400 transition-all duration-75 ease-in-out ${open ? "h-full w-fit text-[18px] leading-[25.2px] opacity-100 lg:h-[50px] lg:w-[544px]" : "h-[0px] w-full text-[0px] leading-[0px] opacity-0 lg:w-[544px]"} `}
-        >
-          {description}
-        </p>
-      </div> */}
       <div
         ref={accordionRef}
-        className={`mx-5 mt-[24px] w-[398px] rounded-[20px] bg-[#FFFFFF] p-[30px_34px] drop-shadow lg:h-[170px] lg:w-[757px]`}
+        className={`mx-5 mt-[24px] rounded-[20px] bg-[#FFFFFF] drop-shadow transition-all duration-300 ease-in-out ${open ? "fadeIn w-[398px] p-[30px_34px] text-lg leading-[25.2px] lg:w-[700px]" : "h-0 w-0 text-[0px] opacity-0"}`}
       >
-        <p
-          className={`plus-jakarta-sans-400 h-full w-fit text-[18px] leading-[25.2px] lg:h-[50px] lg:w-[544px]`}
-        >
-          {description}
-        </p>
+        <p className={`plus-jakarta-sans-400`}>{description}</p>
       </div>
     </div>
   );

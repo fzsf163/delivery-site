@@ -3,9 +3,7 @@ import beda from "../../assets/safe-journey/portrait-delivery-man-holding-cardbo
 import b1 from "../../assets/safe-journey/Rectangle37.png";
 import b2 from "../../assets/safe-journey/Rectangle38.png";
 
-type Props = {};
-
-export default function SafeJourney({}: Props) {
+export default function SafeJourney() {
   return (
     <div className="relative mx-auto mt-[166px] hidden h-[343px] w-[1320px] items-start justify-start gap-[100px] rounded-[20px] bg-[#18347B] text-white xl:flex">
       <div className="p-[39px_51px]">
@@ -13,12 +11,14 @@ export default function SafeJourney({}: Props) {
           We ensure safe transportation & delivery
         </h1>
         <p className="plus-jakarta-sans-400 mt-[16px] text-[18px] leading-[25.2px]">
-          Lorem ipsum dolor sit amet consectetur. Scelerisque aliquam laoreet
-          est f
+          Your shipments will reach their destination securely and right on
+          time, every time.
         </p>
-        <button className="plus-jakarta-sans-600 mt-[32px] rounded-[10px] bg-white p-[10px_20px_10px_20px] text-[20px] leading-[25.2px] text-[#18347B]">
-          Get a Quote
-        </button>
+        <a href="#getQuote">
+          <button className="plus-jakarta-sans-600 mt-[32px] rounded-[10px] bg-white p-[10px_20px_10px_20px] text-[20px] leading-[25.2px] text-[#18347B]">
+            Get a Quote
+          </button>
+        </a>
       </div>
       <div className="relative h-full w-[400px] overflow-hidden">
         <img

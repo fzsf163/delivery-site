@@ -14,8 +14,8 @@ export default function Process() {
           We always follow the best way of logistics{" "}
         </h1>
         <p className="plus-jakarta-sans-400 mt-[24px] h-[50px] w-[544px] text-[18px] leading-[25.2px]">
-          Lorem ipsum dolor sit amet consectetur. Scelerisque aliquam laoreet
-          est f
+          Your satisfaction is our priority, ensuring every shipment is handled
+          with care and efficiency.
         </p>
       </div>
       <div className="relative mt-[24px] flex h-[700px] items-start justify-between">
@@ -35,8 +35,8 @@ export default function Process() {
                 Receive Packages
               </p>
               <p className="plus-jakarta-sans-400 text-[18px] leading-[25.2px]">
-                Lorem ipsum dolor sit amet consectetur. Scelerisque aliquam
-                laoreet est f
+                Track your delivery every step of the way to see exactly when it
+                arrives!
               </p>
             </div>
             <div className="plus-jakarta-sans-800 absolute -bottom-10 left-[35%] h-[86px] w-[86px] rounded-full bg-[#18347B] pt-3 text-center text-[48px] leading-[60.48px]">
@@ -60,8 +60,8 @@ export default function Process() {
                 Transport Packages
               </p>
               <p className="plus-jakarta-sans-400 text-[18px] leading-[25.2px]">
-                Lorem ipsum dolor sit amet consectetur. Scelerisque aliquam
-                laoreet est f
+                Rest easy knowing your packages are on their way, handled with
+                care and speed!
               </p>
             </div>
             <div className="plus-jakarta-sans-800 absolute -bottom-10 left-[35%] h-[86px] w-[86px] rounded-full bg-[#18347B] pt-3 text-center text-[48px] leading-[60.48px]">
@@ -85,8 +85,8 @@ export default function Process() {
                 Deliver Packages
               </p>
               <p className="plus-jakarta-sans-400 text-[18px] leading-[25.2px]">
-                Lorem ipsum dolor sit amet consectetur. Scelerisque aliquam
-                laoreet est f
+                Enjoy peace of mind with our quick and safe delivery right to
+                your door!
               </p>
             </div>
             <div className="plus-jakarta-sans-800 absolute -bottom-10 left-[35%] h-[86px] w-[86px] rounded-full bg-[#18347B] pt-3 text-center text-[48px] leading-[60.48px]">
