@@ -19,13 +19,12 @@ export default function Services() {
         <p className="plus-jakarta-sans-600 h-[45px] w-[140px] rounded-[36px] bg-[#18347B] pt-[8px] text-center text-[24px] leading-[30.24px] text-white">
           Services
         </p>
-        <h5 className="plus-jakarta-sans-700 mt-[19px] h-[120px] w-fit text-center text-[28px] leading-[60.48px] lg:w-[70%]">
-          Welcome to Upex World BD! We make shipping your packages and documents
-          easy and fast. Here’s what we can do for you
+        <h5 className="plus-jakarta-sans-700 mt-[19px] h-[120px] w-fit text-nowrap text-center text-[48px] leading-[60.48px]">
+          Our wide range of services
         </h5>
       </div>
 
-      <div className="mt-[51px] flex flex-wrap items-center justify-center gap-[30px] pb-10">
+      <div className="mt-[20px] flex flex-wrap items-center justify-center gap-[30px] pb-10">
         <div
           style={{
             backgroundImage: `url("${img1}")`,
