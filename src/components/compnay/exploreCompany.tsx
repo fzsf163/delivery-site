@@ -11,7 +11,7 @@ function ExploreCompany() {
           <p className="plus-jakarta-sans-700 w-[70%] text-2xl sm:w-[630px] sm:text-5xl">
             Easy Shipping, No Stress – Upex World Makes It Simple!
           </p>
-          <p className="plus-jakarta-sans-400 w-[70%] text-sm sm:w-[701px] sm:text-lg">
+          <p className="plus-jakarta-sans-400 w-[70%] text-sm text-center sm:w-[701px] sm:text-lg">
             Upex World helps you send packages fast and without worry! Whether
             you're sending something nearby or to another country, we make sure
             it arrives safely. You can track your package from the time it
