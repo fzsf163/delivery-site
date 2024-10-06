@@ -51,9 +51,9 @@ export default function Footer() {
           <div className="flex flex-col items-start gap-8 lg:flex-col lg:gap-[36px]">
             <img src="/upexworld.png" alt="" className="h-[58px] w-[265px]" />
             <p className="plus-jakarta-sans-400 h-auto w-[90%] text-sm leading-[25.2px] sm:text-lg lg:h-[100px] lg:w-[335px] lg:text-[18px]">
-              Lorem ipsum dolor sit amet consectetur. Scelerisque aliquam
-              laoreet est fermentum sed sit. Turpis egestas bibendum tempus
-              aenean en.
+              Upex World offers fast and reliable shipping services with
+              real-time tracking. We make sure your packages arrive safely, no
+              matter where they’re going.
             </p>
           </div>
           {/* 2 */}

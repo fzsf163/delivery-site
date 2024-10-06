@@ -19,7 +19,7 @@ export default function Services() {
         <p className="plus-jakarta-sans-600 h-[45px] w-[140px] rounded-[36px] bg-[#18347B] pt-[8px] text-center text-[24px] leading-[30.24px] text-white">
           Services
         </p>
-        <h5 className="plus-jakarta-sans-700 mt-[19px] h-[120px] w-fit md:text-nowrap text-center md:text-[48px] text-4xl leading-[60.48px]">
+        <h5 className="plus-jakarta-sans-700 mt-[19px] h-[120px] w-fit text-center text-4xl leading-[60.48px] md:text-nowrap md:text-[48px]">
           Our wide range of services
         </h5>
       </div>
@@ -98,8 +98,9 @@ export default function Services() {
                 Ship Freight Transportation
               </p>
               <p className="plus-jakarta-sans-400 text-[18px] leading-[25.2px]">
-                Lorem ipsum dolor sit amet consectetur. Scelerisque aliquam
-                laoreet est f
+                Get your goods delivered quickly and easily! We help move
+                packages from one place to another, even across countries, and
+                you can track everything step by step.
               </p>
             </div>
           </div>
