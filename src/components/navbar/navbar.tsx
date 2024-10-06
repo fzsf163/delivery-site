@@ -83,7 +83,7 @@ export default function Navbar() {
             className="h-[2rem] w-[100%]"
           />
         </div>
-        <div className="size-[44px] cursor-pointer rounded-sm bg-bg-color">
+        <div className="size-[44px] cursor-pointer rounded-md bg-bg-color">
           <div ref={menuRef} id="toggle" onClick={toggleMenu}>
             <div className="one" />
             <div className="two" />
@@ -91,7 +91,7 @@ export default function Navbar() {
           </div>
         </div>
         <div
-          className={`absolute right-0 top-[4rem] z-[9999] h-[150dvh] bg-blue-900 transition-all duration-500 ease-in-out ${open ? "fadeIn w-[300px] md:w-[500px]" : "fadeOut w-0"}`}
+          className={`absolute right-0 top-[4.3rem] z-[9999] h-[150dvh] bg-blue-900 transition-all duration-500 ease-in-out ${open ? "fadeIn w-[300px] md:w-[500px]" : "fadeOut w-0"}`}
         >
           {menuItems.map((m) => {
             return (

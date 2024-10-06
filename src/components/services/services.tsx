@@ -33,7 +33,7 @@ export default function Services() {
             backgroundPosition: "center center",
             objectFit: "cover",
           }}
-          className="h-[513px] w-[420px] rounded-[20px]"
+          className="h-[513px] w-[420px] rounded-[20px] m-2"
         >
           <div className="relative h-full rounded-[20px] bg-gradient-to-t from-[#18347B] to-[#D9D9D900]">
             <div className="absolute bottom-0 left-0 flex flex-col items-start gap-5 p-[40px_20px] text-white">
@@ -60,7 +60,7 @@ export default function Services() {
             backgroundPosition: "center center",
             objectFit: "cover",
           }}
-          className="h-[513px] w-[420px] rounded-[20px]"
+          className="h-[513px] w-[420px] rounded-[20px] m-2"
         >
           <div className="relative h-full rounded-[20px] bg-gradient-to-t from-[#18347B] to-[#D9D9D900]">
             <div className="absolute bottom-0 left-0 flex flex-col items-start gap-5 p-[40px_20px] text-white">
@@ -87,7 +87,7 @@ export default function Services() {
             backgroundPosition: "center center",
             objectFit: "cover",
           }}
-          className="h-[513px] w-[420px] rounded-[20px]"
+          className="h-[513px] w-[420px] rounded-[20px] m-2"
         >
           <div className="relative h-full rounded-[20px] bg-gradient-to-t from-[#18347B] to-[#D9D9D900]">
             <div className="absolute bottom-0 left-0 flex flex-col items-start gap-5 p-[40px_20px] text-white">
