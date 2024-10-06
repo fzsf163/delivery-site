@@ -3,6 +3,9 @@ import air from "../../assets/serviceicons/air-freight.png";
 import customs from "../../assets/serviceicons/customs.png";
 import track from "../../assets/serviceicons/tracking-app.png";
 import road from "../../assets/serviceicons/truck.png";
+import ch from "../../assets/serviceImg/carefulhandeling.jpeg";
+import gs from "../../assets/serviceImg/guarentedsafety.jpeg";
+import zdp from "../../assets/serviceImg/zerodmgpromise.jpeg";
 import "./service.css";
 function ServiceDetails() {
   return (
@@ -13,7 +16,7 @@ function ServiceDetails() {
         easy and fast. Here’s what we can do for you.
       </h5>
       <div className="mx-auto mt-10 lg:w-[80%] 2xl:w-[70%]">
-        <ul className="list-service grid auto-rows-fr items-center space-y-4 p-5 sm:[&_img]:size-10 lg:[&_img]:size-24 xl:[&_img]:size-30 gap-10 [&_li]:text-2xl [&_li]:font-bold [&_li]:text-text-color [&_p]:text-lg [&_p]:font-medium [&_p]:text-black">
+        <ul className="list-service xl:[&_img]:size-30 grid auto-rows-fr items-center gap-10 space-y-4 p-5 sm:[&_img]:size-10 lg:[&_img]:size-24 [&_li]:text-2xl [&_li]:font-bold [&_li]:text-text-color [&_p]:text-lg [&_p]:font-medium [&_p]:text-black">
           <div className="gap-3 space-y-4 sm:grid sm:auto-cols-fr sm:grid-flow-col sm:gap-10 sm:space-y-0">
             <div className="mx-auto w-[10rem] sm:w-full">
               <img src={air} className="h-full w-full" alt="" />
@@ -84,25 +87,48 @@ function ServiceDetails() {
       </div>
       {/* why us */}
       <div>
-        <h5 className="plus-jakarta-sans-700 mx-auto mt-[39px] p-5 text-center text-4xl leading-relaxed sm:w-[80%] sm:p-0 sm:text-3xl lg:w-[70%] xl:text-[38px] ">
+        <h5 className="plus-jakarta-sans-700 mx-auto mt-[39px] p-5 text-center text-4xl leading-relaxed sm:w-[80%] sm:p-0 sm:text-3xl lg:w-[70%] xl:text-[38px]">
           Why Choose Upex World BD?
         </h5>
-        <ul className="list-service mx-auto w-fit space-y-4 p-5 sm:mt-10 [&_li]:text-2xl [&_li]:font-bold [&_li]:text-text-color [&_p]:text-lg [&_p]:font-medium [&_p]:text-black">
-          <li className="space-y-10">
-            Guaranteed Safety:
-            <p>We promise to take care of your packages and keep them safe.</p>
+        <ul className="list-service mx-auto grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] justify-items-center gap-12 p-5 sm:mt-10 md:w-[80%] [&_li]:text-2xl [&_li]:font-bold [&_li]:text-white [&_p]:text-lg [&_p]:font-medium [&_p]:text-white">
+          <li className="grid">
+            <img
+              src={gs}
+              alt="image of guarnteed safety"
+              className="col-span-full col-start-1 row-start-1 rounded-lg"
+            />
+            <div className="col-span-full col-start-1 row-start-1 h-full w-full place-content-center rounded-lg p-4 text-center mix-blend-screen backdrop-blur-0 backdrop-brightness-[0.6]">
+              Guaranteed Safety:
+              <p>
+                We promise to take care of your packages and keep them safe.
+              </p>
+            </div>
           </li>
-          <li>
-            Careful Handling:
-            <p>
-              Our team is trained to handle your items gently, so nothing gets
-            </p>
+          <li className="grid">
+            <img
+              src={ch}
+              alt="image of Careful Handling"
+              className="col-span-full col-start-1 row-start-1 rounded-lg"
+            />
+            <div className="col-span-full col-start-1 row-start-1 h-full w-full place-content-center rounded-lg p-4 text-center mix-blend-screen backdrop-blur-0 backdrop-brightness-[0.6]">
+              Careful Handling:
+              <p>
+                Our team is trained to handle your items gently, so nothing gets
+              </p>
+            </div>
           </li>
-          <li>
-            Zero Damage Promise:
-            <p>
-              We use strong packaging to protect your things during shipping.
-            </p>
+          <li className="grid h-full">
+            <img
+              src={zdp}
+              alt="image of Zero Damage Promise"
+              className="col-span-full col-start-1 row-start-1 h-full rounded-lg"
+            />
+            <div className="col-span-full col-start-1 row-start-1 h-full w-full place-content-center rounded-lg p-4 text-center mix-blend-screen backdrop-blur-0 backdrop-brightness-[0.6]">
+              Zero Damage Promise:
+              <p>
+                We use strong packaging to protect your things during shipping.
+              </p>
+            </div>
           </li>
         </ul>
       </div>
