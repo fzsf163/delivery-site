@@ -20,19 +20,20 @@ const items = [
     ],
   },
   {
-    label: "Company Info",
-    id: 2,
+    label: "Our Services",
+    id: 3,
     menu: [
-      "Less Than Truckload",
-      "Rail Freight Shipping",
-      "Hot Shot Trucking",
-      "Less-than-Truckload",
-      "Container Freight",
+      "Air Freight Services",
+      "Customs Clearance",
+      "Online Shipment Tracking",
+      "Land Transport",
+      "7 Days a Week Operations",
+      "Terms & Conditions",
     ],
   },
   {
-    label: "Our Services",
-    id: 3,
+    label: "Company Info",
+    id: 2,
     menu: ["Home", "Service", "Company", "Contact", "Terms & Conditions"],
   },
 ];
@@ -57,7 +58,7 @@ export default function Footer() {
             </p>
           </div>
           {/* 2 */}
-          <div className="flex flex-wrap items-center justify-start gap-10 lg:justify-center xl:gap-[124px]">
+          <div className="flex flex-wrap items-start justify-start gap-10 lg:justify-center xl:gap-[124px]">
             {items.map((item) => {
               return (
                 <div key={item.id}>
