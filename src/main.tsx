@@ -8,6 +8,7 @@ import Contact from "./routes/contact.tsx";
 import Home from "./routes/home.tsx";
 import ErrorPage from "./routes/notfound.tsx";
 import Service from "./routes/service.tsx";
+import TrackingData from "./routes/trackinginfo.tsx";
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
       {
         path: "service",
         element: <Service></Service>,
+      },
+      {
+        path: "tracking",
+        element: <TrackingData></TrackingData>,
       },
     ],
   },

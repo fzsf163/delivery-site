@@ -1,6 +1,37 @@
+import axios from "axios";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import placholder from "../../assets/heroimg/transport-logistics-products (1) 1.webp";
 import "./hero.css";
 function HeroSection() {
+  const [tracking, SetTracking] = useState("");
+  const [error, setError] = useState("");
+  const nav = useNavigate();
+  const handleTracking = async () => {
+    if (tracking == "") {
+      setError("Tracking number is required");
+    }
+    if (tracking !== "") {
+      try {
+        const p = await axios.get(
+          `https://api.upexworldbd.com/api/manual_tracking.php?tracking_id=${tracking}`,
+        );
+        if (p.data) {
+          console.log("🚀 ~ handleTracking ~ p.data:", p.data)
+          nav("tracking", {
+            state: { info: p.data, trackingNumber: tracking },
+          });
+        }
+      } catch (error) {
+        if (axios.isAxiosError(error)) {
+          console.log("🚀 ~ handleTracking ~ error.code:", error.code);
+          if (error.response?.status === 404) setError("Tracking ID not found");
+        } else {
+          setError(String(error));
+        }
+      }
+    }
+  };
   return (
     <div className="grid h-[40rem] w-full sm:h-fit">
       <img
@@ -31,11 +62,13 @@ function HeroSection() {
                 type="text"
                 name="trackBox"
                 id="trackBox"
-                className="h-12 grow rounded-md border border-white/50 bg-[#D9D9D94A] sm:h-auto sm:w-[60dvw] xl:w-[50rem]"
+                className="h-12 grow rounded-md border border-white/50 bg-[#D9D9D94A] px-2 font-semibold text-white sm:h-auto sm:w-[60dvw] xl:w-[50rem]"
+                onChange={(e) => SetTracking(e.currentTarget.value)}
               />
               <button
                 type="button"
                 className="plus-jakarta-sans-600 rounded-md bg-bg-color px-6 py-3 text-xl text-white sm:w-fit"
+                onClick={handleTracking}
               >
                 <span className="hidden text-nowrap xl:inline">
                   Track Shipment Now
@@ -43,6 +76,7 @@ function HeroSection() {
                 <span className="block text-xs sm:text-lg xl:hidden">Go</span>
               </button>
             </div>
+            {error && <p className="font-bold text-white">*{error}</p>}
           </div>
         </div>
       </div>
