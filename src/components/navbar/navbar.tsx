@@ -42,7 +42,7 @@ export default function Navbar() {
             <img
               src="/upexworld.png"
               alt="upexworld logo"
-              className="h-[2rem] w-[100%] xl:h-[58px] xl:w-[265px]"
+              className="h-full w-[500px] xl:w-[105px]"
             />
           </Link>
         </div>
@@ -80,7 +80,7 @@ export default function Navbar() {
           <img
             src="/upexworld.png"
             alt="upexworld logo"
-            className="h-[2rem] w-[100%]"
+            className="h-full w-[50%]"
           />
         </div>
         <div className="size-[44px] cursor-pointer rounded-md bg-bg-color">
