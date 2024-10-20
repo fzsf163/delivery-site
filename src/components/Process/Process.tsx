@@ -7,7 +7,7 @@ export default function Process() {
   return (
     <div className="mx-auto mt-[158px] hidden w-[1320px] xl:block">
       <div>
-        <p className="plus-jakarta-sans-600 h-[45px] w-[140px] rounded-[32px] bg-[#18347B] pt-[9px] text-center text-[24px] leading-[30.24px] text-white">
+        <p className="plus-jakarta-sans-600 h-[45px] w-[140px] rounded-[32px] bg-red-600 pt-[6px] text-center text-[24px] leading-[30.24px] text-white">
           Process
         </p>
         <h1 className="plus-jakarta-sans-700 mt-[18px] h-[120px] w-[528px] text-[48px] leading-[60.48px]">
@@ -39,7 +39,7 @@ export default function Process() {
                 arrives!
               </p>
             </div>
-            <div className="plus-jakarta-sans-800 absolute -bottom-10 left-[35%] h-[86px] w-[86px] rounded-full bg-[#18347B] pt-3 text-center text-[48px] leading-[60.48px]">
+            <div className="plus-jakarta-sans-800 absolute -bottom-10 left-[35%] h-[86px] w-[86px] rounded-full bg-red-600 pt-3 text-center text-[48px] leading-[60.48px]">
               1
             </div>
           </div>
@@ -64,7 +64,7 @@ export default function Process() {
                 care and speed!
               </p>
             </div>
-            <div className="plus-jakarta-sans-800 absolute -bottom-10 left-[35%] h-[86px] w-[86px] rounded-full bg-[#18347B] pt-3 text-center text-[48px] leading-[60.48px]">
+            <div className="plus-jakarta-sans-800 absolute -bottom-10 left-[35%] h-[86px] w-[86px] rounded-full bg-red-600 pt-3 text-center text-[48px] leading-[60.48px]">
               2
             </div>
           </div>
@@ -89,7 +89,7 @@ export default function Process() {
                 your door!
               </p>
             </div>
-            <div className="plus-jakarta-sans-800 absolute -bottom-10 left-[35%] h-[86px] w-[86px] rounded-full bg-[#18347B] pt-3 text-center text-[48px] leading-[60.48px]">
+            <div className="plus-jakarta-sans-800 absolute -bottom-10 left-[35%] h-[86px] w-[86px] rounded-full bg-red-600 pt-3 text-center text-[48px] leading-[60.48px]">
               3
             </div>
           </div>

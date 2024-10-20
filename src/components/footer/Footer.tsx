@@ -49,8 +49,8 @@ export default function Footer() {
       <div className="mx-auto h-full w-fit max-w-[1320px] py-10 pl-5 lg:px-10 lg:pl-0 lg:pt-[92px] xl:h-[583px]">
         <div className="flex flex-col items-start justify-center gap-10 lg:gap-[113px] xl:flex-row">
           {/* 1 */}
-          <div className="flex flex-col items-start gap-8 lg:flex-col lg:gap-[36px]">
-            <img src="/upexworld.png" alt="" className="h-[58px] w-[265px]" />
+          <div className="flex flex-col items-start gap-8 lg:flex-col lg:gap-[3px]">
+            <img src="/upexworld.png" alt="" className="h-[150px] w-[265px]" />
             <p className="plus-jakarta-sans-400 h-auto w-[90%] text-sm leading-[25.2px] sm:text-lg lg:h-[100px] lg:w-[335px] lg:text-[18px]">
               Upex World offers fast and reliable shipping services with
               real-time tracking. We make sure your packages arrive safely, no
@@ -130,7 +130,7 @@ export default function Footer() {
           {/* contact mobile */}
         </div>
         {/* 3 */}
-        <div className="hidden h-[98px] w-full items-center justify-between rounded-[20px] bg-[#18347B] p-[10px] xl:flex">
+        <div className="hidden h-[98px] w-full items-center justify-between rounded-[20px] bg-red-600 p-[10px] xl:flex">
           {/* mail & phone */}
           <div className="flex h-full items-center justify-start gap-[28px]">
             <div className="h-[78px] w-[298px] rounded-[15px] bg-[#FFFFFF5E] p-[23px_21px]">

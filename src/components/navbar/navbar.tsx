@@ -67,7 +67,7 @@ export default function Navbar() {
           <a href={"#getQuote"}>
             <button
               type="button"
-              className="plus-jakarta-sans-600 h-[45px] w-[158px] rounded-[10px] bg-bg-color p-[10px_20px_10px_20px] leading-[25.2px]"
+              className="plus-jakarta-sans-600 h-[45px] w-[158px] rounded-[10px] bg-red-600 p-[10px_20px_10px_20px] leading-[25.2px]"
             >
               Get a Quota
             </button>

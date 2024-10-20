@@ -4,7 +4,7 @@ function ExploreCompany() {
   return (
     <div className="w-full pb-10 pt-20">
       <div className="mx-auto w-fit space-y-6">
-        <div className="plus-jakarta-sans-600 mx-auto w-fit rounded-full bg-bg-color px-5 py-2 text-white xl:mx-0">
+        <div className="plus-jakarta-sans-600 mx-auto w-fit rounded-full bg-red-600 px-5 py-2 text-white xl:mx-0">
           <p className="text-2xl">Explore Upex BD</p>
         </div>
         <div className="flex flex-col items-center justify-between gap-5 text-center sm:gap-10 sm:text-left xl:flex-row">

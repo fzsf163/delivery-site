@@ -168,7 +168,7 @@ export default function GetInTouchForm() {
                         maxWidth: inputRangeRef.current?.offsetWidth,
                       }}
                       className={
-                        "forChrome absolute left-0 top-2 z-10 h-[10px] rounded-[10px] bg-[#18347B]"
+                        "forChrome absolute left-0 top-2 z-10 h-[10px] rounded-[10px] bg-red-600"
                       }
                     />
                     <span
@@ -177,7 +177,7 @@ export default function GetInTouchForm() {
                         maxWidth: inputRangeRef.current?.offsetWidth,
                       }}
                       className={
-                        "forFire left-0 top-1 z-10 hidden h-[10px] rounded-[10px] bg-[#18347B] sm:absolute"
+                        "forFire left-0 top-1 z-10 hidden h-[10px] rounded-[10px] bg-red-600 sm:absolute"
                       }
                     />
                   </div>
@@ -233,7 +233,7 @@ export default function GetInTouchForm() {
               {/* button submit */}
               <button
                 type="submit"
-                className="mt-[40px] h-[50px] w-full rounded-[10px] bg-[#18347B] text-center disabled:bg-text-color/50 lg:w-[534px]"
+                className="mt-[40px] h-[50px] w-full rounded-[10px] bg-red-600 text-center disabled:bg-text-color/50 lg:w-[534px]"
                 disabled={success === "" ? false : true}
               >
                 {success === "" ? (

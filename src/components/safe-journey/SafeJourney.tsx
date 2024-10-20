@@ -5,7 +5,7 @@ import b2 from "../../assets/safe-journey/Rectangle38.png";
 
 export default function SafeJourney() {
   return (
-    <div className="relative mx-auto mt-[166px] hidden h-[343px] w-[1320px] items-start justify-start gap-[100px] rounded-[20px] bg-[#18347B] text-white xl:flex">
+    <div className="relative mx-auto mt-[166px] hidden h-[343px] w-[1320px] items-start justify-start gap-[100px] rounded-[20px] bg-red-600 text-white xl:flex">
       <div className="p-[39px_51px]">
         <h1 className="plus-jakarta-sans-700 h-[120px] w-[583px] text-[48px] leading-[60.48px]">
           We ensure safe transportation & delivery

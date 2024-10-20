@@ -6,7 +6,7 @@ import four from "../../assets/people/4.webp";
 function PeopleCompany() {
   return (
     <div className="mt-12 h-full w-fit space-y-10">
-      <div className="plus-jakarta-sans-600 mx-auto w-fit rounded-full bg-bg-color px-5 py-2 text-white">
+      <div className="plus-jakarta-sans-600 mx-auto w-fit rounded-full bg-red-600 px-5 py-2 text-white">
         <p className="text-2xl">Meet Our People</p>
       </div>
       <div className="mx-auto grid w-[80%] grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-20 md:gap-10">

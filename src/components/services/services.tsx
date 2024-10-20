@@ -16,7 +16,7 @@ export default function Services() {
       className="h-full w-full bg-[#EFF4FF] pt-[90px] xl:h-[1010px]"
     >
       <div className="mx-auto flex w-fit flex-col items-center">
-        <p className="plus-jakarta-sans-600 h-[45px] w-[140px] rounded-[36px] bg-[#18347B] pt-[8px] text-center text-[24px] leading-[30.24px] text-white">
+        <p className="plus-jakarta-sans-600 h-[45px] w-[140px] rounded-[36px] bg-red-600 pt-[8px] text-center text-[24px] leading-[30.24px] text-white">
           Services
         </p>
         <h5 className="plus-jakarta-sans-700 mt-[19px] h-[120px] w-fit text-center text-4xl leading-[60.48px] md:text-nowrap md:text-[48px]">
@@ -37,7 +37,7 @@ export default function Services() {
         >
           <div className="relative h-full rounded-[20px] bg-gradient-to-t from-[#18347B] to-[#D9D9D900]">
             <div className="absolute bottom-0 left-0 flex flex-col items-start gap-5 p-[40px_20px] text-white">
-              <p className="plus-jakarta-sans-700 h-[47px] w-[109px] rounded-[32px] bg-[#18347B] pt-[9px] text-center text-[24px] leading-[30.24px]">
+              <p className="plus-jakarta-sans-700 h-[47px] w-[109px] rounded-[32px] bg-red-600 pt-[9px] text-center text-[24px] leading-[30.24px]">
                 Road
               </p>
               <p className="plus-jakarta-sans-700 text-[24px] leading-[30.24px]">
@@ -64,7 +64,7 @@ export default function Services() {
         >
           <div className="relative h-full rounded-[20px] bg-gradient-to-t from-[#18347B] to-[#D9D9D900]">
             <div className="absolute bottom-0 left-0 flex flex-col items-start gap-5 p-[40px_20px] text-white">
-              <p className="plus-jakarta-sans-700 h-[47px] w-[109px] rounded-[32px] bg-[#18347B] pt-[9px] text-center text-[24px] leading-[30.24px]">
+              <p className="plus-jakarta-sans-700 h-[47px] w-[109px] rounded-[32px] bg-red-600 pt-[9px] text-center text-[24px] leading-[30.24px]">
                 Air
               </p>
               <p className="plus-jakarta-sans-700 text-[24px] leading-[30.24px]">
@@ -91,7 +91,7 @@ export default function Services() {
         >
           <div className="relative h-full rounded-[20px] bg-gradient-to-t from-[#18347B] to-[#D9D9D900]">
             <div className="absolute bottom-0 left-0 flex flex-col items-start gap-5 p-[40px_20px] text-white">
-              <p className="plus-jakarta-sans-700 h-[47px] w-[109px] rounded-[32px] bg-[#18347B] pt-[9px] text-center text-[24px] leading-[30.24px]">
+              <p className="plus-jakarta-sans-700 h-[47px] w-[109px] rounded-[32px] bg-red-600 pt-[9px] text-center text-[24px] leading-[30.24px]">
                 Water
               </p>
               <p className="plus-jakarta-sans-700 text-[24px] leading-[30.24px]">

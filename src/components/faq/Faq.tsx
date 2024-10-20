@@ -5,7 +5,7 @@ export default function Faq() {
   return (
     <div className="mx-auto mt-[168px] flex w-full flex-wrap items-start justify-center xl:w-[1320px] xl:flex-nowrap">
       <div className="mx-auto w-fit">
-        <p className="plus-jakarta-sans-600 mx-auto h-[45px] w-[140px] rounded-[32px] bg-[#18347B] pt-[9px] text-center text-[24px] leading-[30.24px] text-white lg:mx-0">
+        <p className="plus-jakarta-sans-600 mx-auto h-[45px] w-[140px] rounded-[32px] bg-red-600 pt-[9px] text-center text-[24px] leading-[30.24px] text-white lg:mx-0">
           FAQ
         </p>
         <h1 className="plus-jakarta-sans-700 mx-auto mt-[18px] h-auto w-fit text-center text-xl lg:mx-0 lg:h-fit lg:w-[528px] lg:text-left lg:text-[48px] lg:leading-[60.48px]">

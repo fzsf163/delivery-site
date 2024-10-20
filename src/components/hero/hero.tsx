@@ -52,7 +52,7 @@ function HeroSection() {
             <div className="flex w-full items-center text-center sm:w-fit">
               <label
                 htmlFor="trackBox"
-                className="plus-jakarta-sans-700 w-full rounded-md bg-bg-color px-6 py-3 text-xs text-white sm:w-fit sm:text-xl"
+                className="plus-jakarta-sans-700 w-full rounded-md bg-red-600 px-6 py-3 text-xs text-white sm:w-fit sm:text-xl"
               >
                 Tracking Shipment
               </label>
@@ -67,7 +67,7 @@ function HeroSection() {
               />
               <button
                 type="button"
-                className="plus-jakarta-sans-600 rounded-md bg-bg-color px-6 py-3 text-xl text-white sm:w-fit"
+                className="plus-jakarta-sans-600 rounded-md bg-red-600 px-6 py-3 text-xl text-white sm:w-fit"
                 onClick={handleTracking}
               >
                 <span className="hidden text-nowrap xl:inline">

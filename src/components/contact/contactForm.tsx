@@ -39,12 +39,11 @@ function ContactForm() {
           setSuccess("");
         }, 2000);
       }
-      console.log("🚀 ~ onSubmit ~ error:", error);
     }
   }
   return (
     <div className="mx-auto w-fit space-y-5 p-5 md:p-10 xl:p-0">
-      <div className="h-[45px] w-fit rounded-[36px] bg-[#18347B] text-center">
+      <div className="h-[45px] w-fit rounded-[36px] bg-red-600 text-center">
         <p className="plus-jakarta-sans-600 text-md px-4 py-3 text-white sm:p-[5px_20px_10px_15px] sm:text-[24px] sm:leading-[30.24px]">
           Contact Us
         </p>
@@ -93,7 +92,7 @@ function ContactForm() {
             </div>
             <button
               type="submit"
-              className="plus-jakarta-sans-600 h-[45px] w-fit rounded-[10px] bg-bg-color p-[10px_20px_10px_20px] leading-[25.2px] text-white disabled:bg-text-color/50"
+              className="plus-jakarta-sans-600 h-[45px] w-fit rounded-[10px] bg-red-600 p-[10px_20px_10px_20px] leading-[25.2px] text-white disabled:bg-text-color/50"
               disabled={success === "" ? false : true}
             >
               {success === "" ? (
