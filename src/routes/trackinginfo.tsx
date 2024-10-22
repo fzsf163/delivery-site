@@ -52,9 +52,9 @@ function TrackingData() {
   ];
 
   return (
-    <div className="mx-auto mt-40 w-fit space-y-10">
+    <div className="mx-auto mt-40 w-fit space-y-10 p-3 sm:p-0">
       <div>
-        <p className="space-x-3 rounded-full bg-red-600 p-4 text-xl text-white">
+        <p className="space-x-3 rounded-full bg-red-600 p-4 text-center text-xl text-white">
           <span>Tracking Number</span>
           <span className="font-bold">
             {data?.tracking_id != ""
@@ -81,7 +81,32 @@ function TrackingData() {
                   className={`h-1 w-full rotate-90 ${t.label === "delivered" ? "hidden" : ""} ${Number(data?.tracking_status) >= Number(t.number) ? "bg-red-600" : "border"}`}
                 ></div>
               </div>
-              <p className="text-2xl font-bold capitalize">{t.label}</p>
+              <p className="mt-3 flex items-start justify-center gap-44 text-xs font-bold capitalize sm:mt-1 sm:text-xl">
+                {t.label}{" "}
+                <span
+                  className={`font-normal ${t.label === "created" || t.label === "delivered" ? "text-base text-gray-400" : ""}`}
+                >
+                  {t.label === "created" ? (
+                    <span className="inline-flex flex-col">
+                      Origin{" "}
+                      <span className="text-sm">
+                        {data?.origin === "" ? "no data" : data?.origin}
+                      </span>
+                    </span>
+                  ) : t.label === "delivered" ? (
+                    <span className="inline-flex flex-col">
+                      Destination{" "}
+                      <span className="text-sm">
+                        {data?.destination === ""
+                          ? "no data"
+                          : data?.destination}
+                      </span>
+                    </span>
+                  ) : (
+                    ""
+                  )}
+                </span>
+              </p>
             </div>
           );
         })}

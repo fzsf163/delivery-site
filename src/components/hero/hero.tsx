@@ -17,14 +17,12 @@ function HeroSection() {
           `https://api.upexworldbd.com/api/manual_tracking.php?tracking_id=${tracking}`,
         );
         if (p.data) {
-          console.log("🚀 ~ handleTracking ~ p.data:", p.data)
           nav("tracking", {
             state: { info: p.data, trackingNumber: tracking },
           });
         }
       } catch (error) {
         if (axios.isAxiosError(error)) {
-          console.log("🚀 ~ handleTracking ~ error.code:", error.code);
           if (error.response?.status === 404) setError("Tracking ID not found");
         } else {
           setError(String(error));
@@ -33,7 +31,7 @@ function HeroSection() {
     }
   };
   return (
-    <div className="grid h-[40rem] w-full sm:h-fit">
+    <div className="grid h-[40rem] w-full lg:h-[50rem] 2xl:h-fit">
       <img
         src={placholder}
         alt=""

@@ -37,12 +37,12 @@ export default function Navbar() {
   return (
     <div className="fixed left-0 top-0 z-50 h-[68px] w-full bg-[rgba(197,191,191,0.77)] text-white backdrop-blur-sm lg:h-[100px]">
       <div className="mx-auto hidden w-full items-center justify-center gap-5 lg:flex lg:gap-16 xl:gap-[129px]">
-        <div className="w-fit">
+        <div className="h-[100px] w-[200px]">
           <Link to="/">
             <img
               src="/upexworld.png"
               alt="upexworld logo"
-              className="h-full w-[500px] xl:w-[105px]"
+              className="h-full w-full"
             />
           </Link>
         </div>
@@ -76,12 +76,14 @@ export default function Navbar() {
       </div>
       {/* mobile menu */}
       <div className="relative flex h-full w-full items-center justify-between px-[2rem] lg:hidden">
-        <div className="w-fit">
-          <img
-            src="/upexworld.png"
-            alt="upexworld logo"
-            className="h-full w-[50%]"
-          />
+        <div className="h-[50px] w-[100px]">
+          <Link to={"/"}>
+            <img
+              src="/upexworld.png"
+              alt="upexworld logo"
+              className="h-full w-full"
+            />
+          </Link>
         </div>
         <div className="size-[44px] cursor-pointer rounded-md bg-bg-color">
           <div ref={menuRef} id="toggle" onClick={toggleMenu}>
@@ -103,7 +105,7 @@ export default function Navbar() {
                   <p
                     key={m.id}
                     className={
-                      "text-lg capitalize transition-all duration-500 ease-in-out md:text-[4rem]"
+                      "text-lg font-bold capitalize transition-all duration-500 ease-in-out md:text-[2rem]"
                     }
                   >
                     {m.label}
