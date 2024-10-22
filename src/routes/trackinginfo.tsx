@@ -35,6 +35,7 @@ function TrackingData() {
 
   const loc = useLocation();
   const { state } = loc;
+  console.log("🚀 ~ TrackingData ~ state:", state);
   useEffect(() => {
     if (state) {
       setData(state.info);
@@ -43,8 +44,8 @@ function TrackingData() {
 
   const trackingDetails = [
     { label: "created", number: "1" },
-    { label: "collected", number: "3" },
-    { label: "departed", number: "2" },
+    { label: "collected", number: "2" },
+    { label: "departed", number: "3" },
     { label: "in transit", number: "4" },
     { label: "arrived at destination", number: "5" },
     { label: "out for delivery", number: "6" },
@@ -52,9 +53,9 @@ function TrackingData() {
   ];
 
   return (
-    <div className="mx-auto mt-40 w-fit space-y-10 p-3 sm:p-0">
+    <div className="mt-40 w-full space-y-10 p-3 sm:p-0">
       <div>
-        <p className="space-x-3 rounded-full bg-red-600 p-4 text-center text-xl text-white">
+        <p className="space-x-3 bg-red-600 p-4 text-center text-xl text-white">
           <span>Tracking Number</span>
           <span className="font-bold">
             {data?.tracking_id != ""
@@ -63,53 +64,54 @@ function TrackingData() {
           </span>
         </p>
       </div>
-      <div className="inline-flex flex-col items-start gap-5">
-        {trackingDetails.map((t) => {
-          return (
-            <div
-              key={t.label}
-              className="flex items-start justify-center gap-4"
-            >
-              <div className="flex flex-col items-center justify-center gap-5">
-                <div
-                  className={`mx-auto size-10 rounded-full ${Number(data?.tracking_status) === Number(t.number) ? "animate-pulse" : ""} ${Number(data?.tracking_status) >= Number(t.number) ? (data?.tracking_status === "7" ? "bg-green-600" : "bg-red-600") : "border"}`}
-                >
-                  <Iconcheck></Iconcheck>
+      <div className="mx-auto w-fit">
+        <div className="inline-flex w-full flex-col items-start gap-5">
+          {trackingDetails.map((t) => {
+            return (
+              <div
+                key={t.label}
+                className="flex items-start justify-center gap-4"
+              >
+                <div className="flex flex-col items-center justify-center gap-5">
+                  <div
+                    className={`mx-auto size-10 rounded-full ${Number(data?.tracking_status) === Number(t.number) ? "animate-pulse" : ""} ${Number(data?.tracking_status) >= Number(t.number) ? (data?.tracking_status === "7" ? "bg-green-600" : "bg-red-600") : "border"}`}
+                  >
+                    <Iconcheck></Iconcheck>
+                  </div>
+                  <div
+                    className={`h-1 w-full rotate-90 ${t.label === "delivered" ? "hidden" : ""} ${Number(data?.tracking_status) >= Number(t.number) ? "bg-red-600" : "border"}`}
+                  ></div>
                 </div>
-
-                <div
-                  className={`h-1 w-full rotate-90 ${t.label === "delivered" ? "hidden" : ""} ${Number(data?.tracking_status) >= Number(t.number) ? "bg-red-600" : "border"}`}
-                ></div>
+                <p className="mt-3 flex items-start justify-center gap-44 text-xs font-bold capitalize sm:mt-1 sm:text-xl">
+                  {t.label}{" "}
+                  <span
+                    className={`font-normal ${t.label === "created" || t.label === "delivered" ? "text-base text-gray-400" : ""}`}
+                  >
+                    {t.label === "created" ? (
+                      <span className="inline-flex flex-col">
+                        Origin{" "}
+                        <span className="text-sm">
+                          {data?.origin === "" ? "no data" : data?.origin}
+                        </span>
+                      </span>
+                    ) : t.label === "delivered" ? (
+                      <span className="inline-flex flex-col">
+                        Destination{" "}
+                        <span className="text-sm">
+                          {data?.destination === ""
+                            ? "no data"
+                            : data?.destination}
+                        </span>
+                      </span>
+                    ) : (
+                      ""
+                    )}
+                  </span>
+                </p>
               </div>
-              <p className="mt-3 flex items-start justify-center gap-44 text-xs font-bold capitalize sm:mt-1 sm:text-xl">
-                {t.label}{" "}
-                <span
-                  className={`font-normal ${t.label === "created" || t.label === "delivered" ? "text-base text-gray-400" : ""}`}
-                >
-                  {t.label === "created" ? (
-                    <span className="inline-flex flex-col">
-                      Origin{" "}
-                      <span className="text-sm">
-                        {data?.origin === "" ? "no data" : data?.origin}
-                      </span>
-                    </span>
-                  ) : t.label === "delivered" ? (
-                    <span className="inline-flex flex-col">
-                      Destination{" "}
-                      <span className="text-sm">
-                        {data?.destination === ""
-                          ? "no data"
-                          : data?.destination}
-                      </span>
-                    </span>
-                  ) : (
-                    ""
-                  )}
-                </span>
-              </p>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
     </div>
   );
