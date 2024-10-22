@@ -35,7 +35,6 @@ function TrackingData() {
 
   const loc = useLocation();
   const { state } = loc;
-  console.log("🚀 ~ TrackingData ~ state:", state);
   useEffect(() => {
     if (state) {
       setData(state.info);
@@ -53,9 +52,18 @@ function TrackingData() {
   ];
 
   return (
-    <div className="mt-40 w-full space-y-10 p-3 sm:p-0">
-      <div>
-        <p className="space-x-3 bg-red-600 p-4 text-center text-xl text-white">
+    <div className="mt-28 w-full space-y-5 p-3 sm:p-0">
+      <div className="w-full border">
+        <div className="mx-auto h-[150px] w-[200px]">
+          <img
+            src="/upexworld.png"
+            alt="upexworld logo"
+            className="h-full w-full"
+          />
+        </div>
+      </div>
+      <div className="bg-red-600 p-4 text-xl text-white">
+        <p className="relative  w-fit space-x-3 md:left-[23%] lg:left-[30%] xl:left-[36%] 2xl:left-[42%]">
           <span>Tracking Number</span>
           <span className="font-bold">
             {data?.tracking_id != ""
@@ -64,9 +72,14 @@ function TrackingData() {
           </span>
         </p>
       </div>
-      <div className="mx-auto w-fit">
+      <div className="mx-auto flex w-fit items-center justify-between gap-10">
         <div className="inline-flex w-full flex-col items-start gap-5">
           {trackingDetails.map((t) => {
+            const isCurrentStep =
+              Number(data?.tracking_status) === Number(t.number);
+            const isReachedStep =
+              Number(data?.tracking_status) >= Number(t.number);
+            const isDeliveredStep = t.label === "delivered";
             return (
               <div
                 key={t.label}
@@ -74,7 +87,13 @@ function TrackingData() {
               >
                 <div className="flex flex-col items-center justify-center gap-5">
                   <div
-                    className={`mx-auto size-10 rounded-full ${Number(data?.tracking_status) === Number(t.number) ? "animate-pulse" : ""} ${Number(data?.tracking_status) >= Number(t.number) ? (data?.tracking_status === "7" ? "bg-green-600" : "bg-red-600") : "border"}`}
+                    className={`mx-auto size-10 rounded-full ${isCurrentStep ? "animate-pulse" : ""} ${
+                      isDeliveredStep && isCurrentStep
+                        ? "bg-green-500"
+                        : isReachedStep
+                          ? "bg-red-500"
+                          : "border"
+                    }`}
                   >
                     <Iconcheck></Iconcheck>
                   </div>
@@ -82,36 +101,36 @@ function TrackingData() {
                     className={`h-1 w-full rotate-90 ${t.label === "delivered" ? "hidden" : ""} ${Number(data?.tracking_status) >= Number(t.number) ? "bg-red-600" : "border"}`}
                   ></div>
                 </div>
-                <p className="mt-3 flex items-start justify-center gap-44 text-xs font-bold capitalize sm:mt-1 sm:text-xl">
+                <p className="mt-3 flex items-start gap-14 text-xs font-bold capitalize sm:mt-1 sm:text-xl md:gap-44">
                   {t.label}{" "}
-                  <span
-                    className={`font-normal ${t.label === "created" || t.label === "delivered" ? "text-base text-gray-400" : ""}`}
-                  >
-                    {t.label === "created" ? (
-                      <span className="inline-flex flex-col">
-                        Origin{" "}
-                        <span className="text-sm">
-                          {data?.origin === "" ? "no data" : data?.origin}
-                        </span>
-                      </span>
-                    ) : t.label === "delivered" ? (
-                      <span className="inline-flex flex-col">
-                        Destination{" "}
-                        <span className="text-sm">
-                          {data?.destination === ""
-                            ? "no data"
-                            : data?.destination}
-                        </span>
-                      </span>
-                    ) : (
-                      ""
-                    )}
-                  </span>
                 </p>
               </div>
             );
           })}
         </div>
+        <div className="flex h-[34rem] flex-col items-start justify-between text-red-600">
+          <p className="inline-flex flex-col text-xl">
+            Origin{" "}
+            <span className="text-sm font-semibold">
+              {data?.origin === "" ? "no data" : data?.origin}
+            </span>
+          </p>
+          <p className="inline-flex flex-col text-xl">
+            Destination{" "}
+            <span className="text-sm font-semibold">
+              {data?.destination === "" ? "no data" : data?.destination}
+            </span>
+          </p>
+        </div>
+      </div>
+      <div className="relative left-4 w-fit md:left-[25%] lg:left-[30%] xl:left-[36%] 2xl:left-[42%] ">
+        <p className="font-semibold text-red-400">Last Updated</p>
+        <p
+          className={`font-semibold ${data?.tracking_status === "7" ? "block" : "hidden"}`}
+        >
+          The shipment has been delivered
+        </p>
+        <p className="text-sm">{data?.updated_at}</p>
       </div>
     </div>
   );

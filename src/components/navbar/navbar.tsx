@@ -76,7 +76,7 @@ export default function Navbar() {
       </div>
       {/* mobile menu */}
       <div className="relative flex h-full w-full items-center justify-between px-[2rem] lg:hidden">
-        <div className="h-[50px] w-[100px]">
+        <div className="h-[80px] w-[100px]">
           <Link to={"/"}>
             <img
               src="/upexworld.png"
