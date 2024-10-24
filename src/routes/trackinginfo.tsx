@@ -35,6 +35,7 @@ function TrackingData() {
 
   const loc = useLocation();
   const { state } = loc;
+  console.log("🚀 ~ TrackingData ~ state:", state);
   useEffect(() => {
     if (state) {
       setData(state.info);
@@ -62,8 +63,8 @@ function TrackingData() {
           />
         </div>
       </div>
-      <div className="bg-red-600 p-4 text-xl text-white">
-        <p className="relative  w-fit space-x-3 md:left-[23%] lg:left-[30%] xl:left-[36%] 2xl:left-[42%]">
+      <div className="bg-red-600 p-4 text-base text-white">
+        <p className="relative w-fit space-x-3 md:left-[23%] lg:left-[30%] xl:left-[36%] 2xl:left-[42%]">
           <span>Tracking Number</span>
           <span className="font-bold">
             {data?.tracking_id != ""
@@ -111,19 +112,19 @@ function TrackingData() {
         <div className="flex h-[34rem] flex-col items-start justify-between text-red-600">
           <p className="inline-flex flex-col text-xl">
             Origin{" "}
-            <span className="text-sm font-semibold">
+            <span className="text-sm font-semibold text-black">
               {data?.origin === "" ? "no data" : data?.origin}
             </span>
           </p>
           <p className="inline-flex flex-col text-xl">
             Destination{" "}
-            <span className="text-sm font-semibold">
+            <span className="text-sm font-semibold text-black">
               {data?.destination === "" ? "no data" : data?.destination}
             </span>
           </p>
         </div>
       </div>
-      <div className="relative left-4 w-fit md:left-[25%] lg:left-[30%] xl:left-[36%] 2xl:left-[42%] ">
+      <div className="relative left-4 w-fit md:left-[25%] lg:left-[30%] xl:left-[36%] 2xl:left-[42%]">
         <p className="font-semibold text-red-400">Last Updated</p>
         <p
           className={`font-semibold ${data?.tracking_status === "7" ? "block" : "hidden"}`}

@@ -1,5 +1,5 @@
 import axios from "axios";
-import { useState } from "react";
+import { useState, type KeyboardEvent as ReactKeyboardEvent } from "react";
 import { useNavigate } from "react-router-dom";
 import placholder from "../../assets/heroimg/transport-logistics-products (1) 1.webp";
 import "./hero.css";
@@ -28,6 +28,12 @@ function HeroSection() {
           setError(String(error));
         }
       }
+    }
+  };
+
+  const handleKeyPress = (e: ReactKeyboardEvent<HTMLInputElement>) => {
+    if (e.key === "Enter") {
+      handleTracking();
     }
   };
   return (
@@ -62,6 +68,8 @@ function HeroSection() {
                 id="trackBox"
                 className="h-12 grow rounded-md border border-white/50 bg-[#D9D9D94A] px-2 font-semibold text-white sm:h-auto sm:w-[60dvw] xl:w-[50rem]"
                 onChange={(e) => SetTracking(e.currentTarget.value)}
+                value={tracking}
+                onKeyDown={handleKeyPress}
               />
               <button
                 type="button"
