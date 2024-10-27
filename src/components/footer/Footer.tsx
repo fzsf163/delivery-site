@@ -45,7 +45,7 @@ const logos = [
 ];
 export default function Footer() {
   return (
-    <div className="mt-[100px] w-full rounded-[20px] bg-[#FFFFFF] drop-shadow">
+    <div className="mt-[100px] w-full rounded-[20px] bg-black text-white drop-shadow">
       <div className="mx-auto h-full w-fit max-w-[1320px] py-10 pl-5 lg:px-10 lg:pl-0 lg:pt-[92px] xl:h-[583px]">
         <div className="flex flex-col items-start justify-center gap-10 lg:gap-[113px] xl:flex-row">
           {/* 1 */}
@@ -74,7 +74,7 @@ export default function Footer() {
                       return (
                         <p
                           key={index + options}
-                          className="plus-jakarta-sans-400 pb-[24px] text-[18px] leading-[25.2px] text-[#212121]"
+                          className="plus-jakarta-sans-400 pb-[24px] text-[18px] leading-[25.2px] text-white"
                         >
                           {options}
                         </p>
