@@ -27,11 +27,11 @@ const menuItems = [
 ];
 export default function Navbar() {
   const menuRef = useRef<HTMLDivElement>(null);
-  const [open, setopen] = useState(false);
+  const [open, setOpen] = useState(false);
 
   const toggleMenu = () => {
     menuRef.current?.classList.toggle("on");
-    setopen(!open);
+    setOpen(!open);
   };
 
   return (
