@@ -18,9 +18,10 @@ const boxes = [
   {
     img: twoGuys,
     titleText: "Visit our office",
-    des: "28 Street, New York City United States of America",
+    des: "28 Street, New York City, USA",
   },
 ];
+
 function BoxForContact() {
   return (
     <div className="mx-auto grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] place-items-center gap-8 p-3 xl:w-[70%]">
@@ -28,8 +29,8 @@ function BoxForContact() {
         const key = crypto.randomUUID();
         return (
           <div key={key} className="relative max-w-[20rem]">
-            <img src={b.img} className="h-full w-full"></img>
-            <div className="absolute bottom-0 flex h-fit w-full flex-col items-center justify-center gap-4 rounded-md bg-white p-6 text-center font-bold shadow">
+            <img src={b.img} className="h-full w-full" alt={""}></img>
+            <div className="absolute bottom-0 flex h-[9rem] w-full flex-col items-center justify-center gap-4 rounded-md bg-white p-6 text-center font-bold shadow">
               <p className="text-center text-xl">{b.titleText}</p>
               <div className="w-[80%]">
                 <p className="text-sm">{b.des}</p>
