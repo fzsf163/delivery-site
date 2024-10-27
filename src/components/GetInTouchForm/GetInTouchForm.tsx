@@ -45,7 +45,6 @@ export default function GetInTouchForm() {
           }
         }, 1000);
       }
-      console.log(v.data);
     } catch (error) {
       if (error) {
         setSuccess(String(error));
@@ -53,9 +52,9 @@ export default function GetInTouchForm() {
           setSuccess("");
         }, 2000);
       }
-      console.log("🚀 ~ onSubmit ~ error:", error);
     }
   }
+
   return (
     <div
       style={{
