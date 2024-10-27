@@ -14,7 +14,7 @@ export default function NumberCard() {
       }}
       className="mx-auto mt-[80px] h-full w-full xl:h-[493px]"
     >
-      <div className="flex h-full w-full flex-wrap items-center justify-center gap-[31px] bg-blue-800/50 px-2 py-5 text-white">
+      <div className="flex h-full w-full flex-wrap items-center justify-center gap-[31px] bg-red-800/50 px-2 py-5 text-white">
         <div className="gradient-border h-full w-[186px] rounded-[20px] bg-[#DFDFDF4D] p-[22px] lg:h-[228px] lg:w-[307px]">
           <div className="flex items-center justify-start gap-[15px]">
             <img src={img2} alt="" className="size-[48px] lg:size-[66px]" />

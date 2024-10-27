@@ -50,7 +50,11 @@ export default function Footer() {
         <div className="flex flex-col items-start justify-center gap-10 lg:gap-[113px] xl:flex-row">
           {/* 1 */}
           <div className="flex flex-col items-start gap-8 lg:flex-col lg:gap-[3px]">
-            <img src="/upexworld.png" alt="" className="h-[150px] w-[265px]" />
+            <img
+              src="/upexworld.png"
+              alt=""
+              className="mx-auto h-[150px] w-[200px]"
+            />
             <p className="plus-jakarta-sans-400 h-auto w-[90%] text-sm leading-[25.2px] sm:text-lg lg:h-[100px] lg:w-[335px] lg:text-[18px]">
               Upex World offers fast and reliable shipping services with
               real-time tracking. We make sure your packages arrive safely, no
@@ -62,7 +66,7 @@ export default function Footer() {
             {items.map((item) => {
               return (
                 <div key={item.id}>
-                  <p className="plus-jakarta-sans-600 pb-[24px] text-[24px] leading-[30.24px] text-[#18347B]">
+                  <p className="plus-jakarta-sans-600 pb-[24px] text-[24px] leading-[30.24px] text-red-600">
                     {item.label}
                   </p>
                   <div>
@@ -94,13 +98,13 @@ export default function Footer() {
               </div>
               <div className="w-[298px] rounded-[15px]">
                 <a
-                  href="tel:+88017258369147"
+                  href="tel:+8801711473954"
                   className="plus-jakarta-sans-500 flex items-center justify-start gap-[10px] text-center text-[18px] leading-[25.2px]"
                 >
                   <span>
                     <img src={phoneblue} alt="" className="size-[32px]" />
                   </span>{" "}
-                  017258369147
+                  +8801711473954
                 </a>
               </div>
               {/* follow */}
@@ -143,13 +147,13 @@ export default function Footer() {
             </div>
             <div className="h-[78px] w-[298px] rounded-[15px] bg-[#FFFFFF5E] p-[23px_21px]">
               <a
-                href="tel:+88017258369147"
+                href="tel:+8801711473954"
                 className="plus-jakarta-sans-500 flex items-center justify-center gap-[10px] text-center text-[18px] leading-[25.2px] text-white"
               >
                 <span>
                   <img src={phoneLogo} alt="" className="size-[32px]" />
                 </span>{" "}
-                017258369147
+                +8801711473954
               </a>
             </div>
           </div>

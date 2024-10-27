@@ -33,9 +33,9 @@ export default function Services() {
             backgroundPosition: "center center",
             objectFit: "cover",
           }}
-          className="h-[513px] w-[420px] rounded-[20px] m-2"
+          className="m-2 h-[513px] w-[420px] rounded-[20px]"
         >
-          <div className="relative h-full rounded-[20px] bg-gradient-to-t from-[#18347B] to-[#D9D9D900]">
+          <div className="relative h-full rounded-[20px] bg-gradient-to-t from-red-500/40 to-red-600/40">
             <div className="absolute bottom-0 left-0 flex flex-col items-start gap-5 p-[40px_20px] text-white">
               <p className="plus-jakarta-sans-700 h-[47px] w-[109px] rounded-[32px] bg-red-600 pt-[9px] text-center text-[24px] leading-[30.24px]">
                 Road
@@ -60,9 +60,9 @@ export default function Services() {
             backgroundPosition: "center center",
             objectFit: "cover",
           }}
-          className="h-[513px] w-[420px] rounded-[20px] m-2"
+          className="m-2 h-[513px] w-[420px] rounded-[20px]"
         >
-          <div className="relative h-full rounded-[20px] bg-gradient-to-t from-[#18347B] to-[#D9D9D900]">
+          <div className="relative h-full rounded-[20px] bg-gradient-to-t from-red-500/40 to-red-600/40">
             <div className="absolute bottom-0 left-0 flex flex-col items-start gap-5 p-[40px_20px] text-white">
               <p className="plus-jakarta-sans-700 h-[47px] w-[109px] rounded-[32px] bg-red-600 pt-[9px] text-center text-[24px] leading-[30.24px]">
                 Air
@@ -87,9 +87,9 @@ export default function Services() {
             backgroundPosition: "center center",
             objectFit: "cover",
           }}
-          className="h-[513px] w-[420px] rounded-[20px] m-2"
+          className="m-2 h-[513px] w-[420px] rounded-[20px]"
         >
-          <div className="relative h-full rounded-[20px] bg-gradient-to-t from-[#18347B] to-[#D9D9D900]">
+          <div className="relative h-full rounded-[20px] bg-gradient-to-t from-red-500/40 to-red-600/40">
             <div className="absolute bottom-0 left-0 flex flex-col items-start gap-5 p-[40px_20px] text-white">
               <p className="plus-jakarta-sans-700 h-[47px] w-[109px] rounded-[32px] bg-red-600 pt-[9px] text-center text-[24px] leading-[30.24px]">
                 Water
