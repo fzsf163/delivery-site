@@ -1,5 +1,3 @@
-import img from "../../assets/contact/aerial-view-container-cargo-ship-sea 2.webp";
-
 function ContactHero() {
   return (
     <div className="w-full sm:h-full">
