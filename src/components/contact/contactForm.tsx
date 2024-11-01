@@ -25,7 +25,7 @@ function ContactForm() {
           setSuccess(
             v.data.message + " " + "(" + String((count = count - 1)) + ")",
           );
-          console.log(count);
+
           if (count === 0) {
             clearInterval(countdown);
             setSuccess("");

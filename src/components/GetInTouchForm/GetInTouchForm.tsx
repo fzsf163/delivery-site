@@ -1,6 +1,7 @@
 import axios from "axios";
 import { FormEvent, useRef, useState } from "react";
 import formbg from "../../assets/formbg.webp";
+import DropdownInput from "./dropdown-component";
 import "./getintouch.css";
 
 export default function GetInTouchForm() {
@@ -38,7 +39,6 @@ export default function GetInTouchForm() {
           setSuccess(
             v.data.message + " " + "(" + String((count = count - 1)) + ")",
           );
-          console.log(count);
           if (count === 0) {
             clearInterval(countdown);
             setSuccess("");
@@ -204,13 +204,14 @@ export default function GetInTouchForm() {
                   >
                     Freight Type
                   </label>
-                  <input
+                  {/* <input
                     type="text"
                     name="freightForm"
                     id="freightForm"
                     className="h-[40px] w-full rounded-[10px] border-[1.5px] border-white bg-[#D9D9D94A] px-2 lg:w-[250px]"
                     required
-                  />
+                  /> */}
+                  <DropdownInput></DropdownInput>
                 </div>
                 {/* phone */}
                 <div className="mt-[21px] flex flex-col space-y-[10px]">

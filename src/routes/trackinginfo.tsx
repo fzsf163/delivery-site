@@ -35,7 +35,7 @@ function TrackingData() {
 
   const loc = useLocation();
   const { state } = loc;
-  console.log("🚀 ~ TrackingData ~ state:", state);
+
   useEffect(() => {
     if (state) {
       setData(state.info);
