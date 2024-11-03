@@ -37,7 +37,7 @@ export default function Navbar() {
   return (
     <div className="fixed left-0 top-0 z-50 h-[68px] w-full bg-[rgba(197,191,191,0.77)] text-white backdrop-blur-sm lg:h-[100px]">
       <div className="mx-auto hidden w-full items-center justify-center gap-5 lg:flex lg:gap-16 xl:gap-[129px]">
-        <div className="h-[100px] w-[140px]">
+        <div className="h-[80px] w-[140px]">
           <Link to="/">
             <img
               src="/upexworld.png"

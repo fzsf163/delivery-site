@@ -1,11 +1,11 @@
-import insta from "../../assets/footer/basil_instagram-solid.png";
 import mailLogo from "../../assets/footer/bi_mail_white (2).png";
 import phoneblue from "../../assets/footer/bi_phone.png";
 import phoneLogo from "../../assets/footer/bi_phone_white (1).png";
-import linkdin from "../../assets/footer/bxl_linkedin.png";
-import fb from "../../assets/footer/mingcute_facebook-fill.png";
-import x from "../../assets/footer/prime_twitter.png";
+import fb from "../../assets/footer/facebook-color-svgrepo-com.svg";
+import insta from "../../assets/footer/instagram-svgrepo-com.svg";
+import linkdin from "../../assets/footer/linkedin-svgrepo-com.svg";
 import mailBlue from "../../assets/footer/tabler_mail.png";
+import youtube from "../../assets/footer/youtube-color-svgrepo-com.svg";
 
 const items = [
   {
@@ -40,7 +40,7 @@ const items = [
 const logos = [
   { label: "fb", src: fb },
   { label: "insta", src: insta },
-  { label: "x", src: x },
+  { label: "x", src: youtube },
   { label: "linkdin", src: linkdin },
 ];
 export default function Footer() {
@@ -167,7 +167,7 @@ export default function Footer() {
                 return (
                   <div
                     key={logo.label}
-                    className="size-[38px] rounded-full bg-[#FFFFFF] p-2"
+                    className="rounded-b-none rounded-t-sm bg-[#FFFFFF] p-2"
                   >
                     <img
                       src={logo.src}
