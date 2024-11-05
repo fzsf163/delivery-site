@@ -16,7 +16,7 @@ function ServiceDetails() {
         easy and fast. Here’s what we can do for you.
       </h5>
       <div className="mx-auto mt-10 lg:w-[80%] 2xl:w-[70%]">
-        <ul className="list-service xl:[&_img]:size-30 grid auto-rows-fr items-center gap-10 space-y-4 p-5 sm:[&_img]:size-10 lg:[&_img]:size-24 [&_li]:text-2xl [&_li]:font-bold [&_li]:text-text-color [&_p]:text-lg [&_p]:font-medium [&_p]:text-black">
+        <ul className="list-service xl:[&_img]:size-30 grid auto-rows-fr items-center gap-10 space-y-4 p-5 sm:[&_img]:size-10 lg:[&_img]:size-24 [&_li]:text-2xl [&_li]:font-bold [&_li]:text-red-500 [&_p]:text-lg [&_p]:font-medium [&_p]:text-black">
           <div className="gap-3 space-y-4 sm:grid sm:auto-cols-fr sm:grid-flow-col sm:gap-10 sm:space-y-0">
             <div className="mx-auto w-[10rem] sm:w-full">
               <img src={air} className="h-full w-full" alt="" />
