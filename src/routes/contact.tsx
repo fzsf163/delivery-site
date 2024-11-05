@@ -8,7 +8,9 @@ function Contact() {
     <div className="space-y-10">
       <ContactHero></ContactHero>
       <BoxForContact></BoxForContact>
-      <MapOfLocation></MapOfLocation>
+      <div className="p-4 xl:p-0">
+        <MapOfLocation></MapOfLocation>
+      </div>
       <ContactForm></ContactForm>
     </div>
   );

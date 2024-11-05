@@ -1,9 +1,7 @@
-import map from "../../assets/contact/map/image 1.webp";
-
 function MapOfLocation() {
   return (
-    <div className="mx-auto w-fit p-4 xl:p-0">
-      <img src={map} alt="" className="rounded" />
+    <div className="sm:m-20 mx-auto h-full w-fit overflow-hidden">
+      <img src={"map.webp"} alt="" className="scale-150 sm:scale-100 rounded" />
     </div>
   );
 }
