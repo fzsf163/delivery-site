@@ -51,7 +51,7 @@ export default function Footer() {
           {/* 1 */}
           <div className="flex flex-col items-start gap-8 lg:flex-col lg:gap-[3px]">
             <img
-              src="/upexworld.png"
+              src="/UpExLogoSVGWhite-01.svg"
               alt=""
               className="mx-auto h-[150px] sm:w-[200px]"
             />

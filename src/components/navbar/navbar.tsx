@@ -40,7 +40,7 @@ export default function Navbar() {
         <div className="h-[80px] w-[140px]">
           <Link to="/">
             <img
-              src="/upexworld.png"
+              src="/UpExLogoSVGBlack-01.svg"
               alt="upexworld logo"
               className="h-full w-full"
             />
@@ -79,7 +79,7 @@ export default function Navbar() {
         <div className="h-[80px] w-[100px]">
           <Link to={"/"}>
             <img
-              src="/upexworld.png"
+              src="/UpExLogoSVGBlack-01.svg"
               alt="upexworld logo"
               className="h-full w-full"
             />
