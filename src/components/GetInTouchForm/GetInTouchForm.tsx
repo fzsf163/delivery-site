@@ -66,7 +66,7 @@ export default function GetInTouchForm() {
       id="getQuote"
     >
       <form onSubmit={(e) => onSubmit(e)}>
-        <div className="h-full w-[90%] bg-red-500/40 py-5 sm:p-10 lg:py-4">
+        <div className="h-full w-full bg-red-500/40 py-5 sm:p-10 lg:py-4">
           <div className="mx-auto flex h-full w-full flex-wrap items-center justify-center gap-5 xl:gap-[147px]">
             <div className="space-y-[24px] w-full">
               <h1 className="plus-jakarta-sans-700 mx-auto h-auto w-full text-center text-2xl sm:text-4xl text-white lg:h-[120px] lg:w-[528px] lg:text-[48px] lg:leading-[60.48px]">
