@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./navbar.css";
 
 const menuItems = [
@@ -85,7 +85,7 @@ export default function Navbar() {
             />
           </Link>
         </div>
-        <div className="size-[44px] cursor-pointer rounded-md bg-bg-color">
+        <div className="size-[44px] cursor-pointer rounded-md">
           <div ref={menuRef} id="toggle" onClick={toggleMenu}>
             <div className="one" />
             <div className="two" />
@@ -93,11 +93,18 @@ export default function Navbar() {
           </div>
         </div>
         <div
-          className={`absolute right-0 top-[4.3rem] z-[9999] h-[150dvh] bg-blue-900 transition-all duration-500 ease-in-out ${open ? "fadeIn w-[300px] md:w-[500px]" : "fadeOut w-0"}`}
+          className={`absolute right-0 top-[4.3rem] z-[9999] h-[150dvh] bg-red-600 transition-all duration-500 ease-in-out ${open ? "fadeIn w-[300px] md:w-[500px]" : "fadeOut w-0"}`}
         >
           {menuItems.map((m) => {
             return (
-              <Link to={m.href} key={m.label + m.id} onClick={toggleMenu}>
+              <NavLink
+                to={m.href}
+                key={m.label + m.id}
+                onClick={toggleMenu}
+                className={({ isActive, isPending }) =>
+                  isPending ? "text-blue-400" : isActive ? "text-black" : ""
+                }
+              >
                 <div
                   key={m.id}
                   className="flex flex-col items-start pl-[3rem] pt-[3rem]"
@@ -111,7 +118,7 @@ export default function Navbar() {
                     {m.label}
                   </p>
                 </div>
-              </Link>
+              </NavLink>
             );
           })}
         </div>

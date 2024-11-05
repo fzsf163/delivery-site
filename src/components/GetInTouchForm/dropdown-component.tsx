@@ -24,7 +24,7 @@ const Dropdown = ({
   };
 
   return (
-    <div className="relative w-64">
+    <div className="relative w-52 sm:w-64">
       <input
         type="hidden"
         name={"freightForm"}
@@ -74,7 +74,7 @@ export default function DropdownInput() {
     <div className="h-[40px] w-full rounded-[10px] px-2 lg:w-[250px]">
       <Dropdown
         options={options}
-        placeholder="Select something"
+        placeholder="Select"
         // onChange={(value) => console.log(value)}
       />
     </div>

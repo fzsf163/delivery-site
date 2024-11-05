@@ -61,7 +61,7 @@ function HeroSection() {
                 Tracking Shipment
               </label>
             </div>
-            <div className="flex w-full justify-center gap-4 sm:flex-row xl:gap-10">
+            <div className="flex flex-col w-full justify-center gap-4 sm:flex-row xl:gap-10">
               <input
                 type="text"
                 name="trackBox"

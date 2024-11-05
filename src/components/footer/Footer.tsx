@@ -45,7 +45,7 @@ const logos = [
 ];
 export default function Footer() {
   return (
-    <div className="mt-[100px] w-full rounded-[20px] bg-black text-white drop-shadow">
+    <div className="mt-[100px] w-full rounded-[20px] rounded-b-none bg-black text-white drop-shadow">
       <div className="mx-auto h-full w-fit max-w-[1320px] py-10 pl-5 lg:px-10 lg:pl-0 lg:pt-[92px] xl:h-[583px]">
         <div className="flex flex-col items-start justify-center gap-10 lg:gap-[113px] xl:flex-row">
           {/* 1 */}
@@ -53,7 +53,7 @@ export default function Footer() {
             <img
               src="/upexworld.png"
               alt=""
-              className="mx-auto h-[150px] w-[200px]"
+              className="mx-auto h-[150px] sm:w-[200px]"
             />
             <p className="plus-jakarta-sans-400 h-auto w-[90%] text-sm leading-[25.2px] sm:text-lg lg:h-[100px] lg:w-[335px] lg:text-[18px]">
               Upex World offers fast and reliable shipping services with
@@ -88,7 +88,7 @@ export default function Footer() {
               <p className="plus-jakarta-sans-600 text-[24px] leading-[30.24px] text-text-color">
                 Contact
               </p>
-              <div className="w-[298px] rounded-[15px]">
+              <div className="sm:w-[298px] rounded-[15px]">
                 <p className="plus-jakarta-sans-500 flex items-center justify-start gap-[10px] text-wrap text-center text-[18px] leading-[25.2px]">
                   <span>
                     <img src={mailBlue} alt="" className="size-[32px]" />
@@ -96,7 +96,7 @@ export default function Footer() {
                   Info@upexworldbd.com
                 </p>
               </div>
-              <div className="w-[298px] rounded-[15px]">
+              <div className="sm:w-[298px] rounded-[15px]">
                 <a
                   href="tel:+8801711473954"
                   className="plus-jakarta-sans-500 flex items-center justify-start gap-[10px] text-center text-[18px] leading-[25.2px]"
@@ -112,12 +112,12 @@ export default function Footer() {
                 <p className="plus-jakarta-sans-600 text-[24px] leading-[30.24px] text-text-color">
                   Follow Us on
                 </p>
-                <div className="flex items-center justify-center gap-3 rounded-[15px] bg-[#FFFFFF5E]">
+                <div className="flex items-center justify-center gap-3 rounded-[15px] bg-[#FFFFFF5E] p-3">
                   {logos.map((logo) => {
                     return (
                       <div
                         key={logo.label}
-                        className="size-[38px] rounded-full bg-[#FFFFFF]"
+                        className="flex size-[38px] items-center justify-center rounded-full bg-[#FFFFFF]"
                       >
                         <img
                           src={logo.src}
@@ -167,7 +167,7 @@ export default function Footer() {
                 return (
                   <div
                     key={logo.label}
-                    className="rounded-b-none rounded-t-sm bg-[#FFFFFF] p-2"
+                    className="rounded-b-none bg-[#FFFFFF] p-2"
                   >
                     <img
                       src={logo.src}
