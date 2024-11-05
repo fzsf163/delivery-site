@@ -67,9 +67,9 @@ export default function GetInTouchForm() {
     >
       <form onSubmit={(e) => onSubmit(e)}>
         <div className="h-full w-full bg-red-500/40 py-5 sm:p-10 lg:py-4">
-          <div className="mx-auto flex h-full w-full flex-wrap items-center justify-center gap-5 xl:gap-[147px]">
-            <div className="space-y-[24px] w-full">
-              <h1 className="plus-jakarta-sans-700 mx-auto h-auto w-full text-center text-2xl sm:text-4xl text-white lg:h-[120px] lg:w-[528px] lg:text-[48px] lg:leading-[60.48px]">
+          <div className="mx-auto flex h-full w-full flex-wrap sm:flex-nowrap items-center justify-center gap-5 xl:gap-[147px]">
+            <div className="w-full space-y-[24px]">
+              <h1 className="plus-jakarta-sans-700 mx-auto h-auto w-full text-center text-2xl text-white sm:text-4xl lg:h-[120px] lg:w-[528px] lg:text-[48px] lg:leading-[60.48px]">
                 We always follow the best way of logistics{" "}
               </h1>
               <p className="plus-jakarta-sans-400 mx-auto h-auto w-[80%] text-center text-lg leading-[25.2px] text-white lg:h-[75px] lg:w-[533px] lg:text-[18px]">
@@ -99,7 +99,7 @@ export default function GetInTouchForm() {
                 />
               </div>
               {/* email and phone div */}
-              <div className="flex items-center justify-start gap-[30px]">
+              <div className="flex flex-col justify-start gap-[30px] sm:flex-row sm:items-center">
                 {/* email */}
                 <div className="mt-[21px] flex flex-col space-y-[10px]">
                   <label
@@ -195,12 +195,12 @@ export default function GetInTouchForm() {
                 </div>
               </div>
               {/* freight & Load */}
-              <div className="flex flex-col items-center justify-start gap-5 lg:gap-[30px]">
+              <div className="flex flex-col sm:items-center justify-start gap-5 sm:flex-row lg:gap-[30px]">
                 {/* email */}
                 <div className="mt-[21px] flex flex-col space-y-[10px]">
                   <label
-                    htmlFor="emailForm"
-                    className="plus-jakarta-sans-400 h-[20px] sm:w-[94px] text-[16px] leading-[20.16px]"
+                    htmlFor="freightForm"
+                    className="plus-jakarta-sans-400 h-[20px] text-[16px] leading-[20.16px] sm:w-[94px]"
                   >
                     Freight Type
                   </label>
@@ -225,7 +225,7 @@ export default function GetInTouchForm() {
                     type="text"
                     name="loadForm"
                     id="loadForm"
-                    className="h-[40px] w-full rounded-[10px] border-[1.5px] border-white bg-[#D9D9D94A] px-2 lg:w-[250px]"
+                    className="h-[40px] w-full rounded-[10px] border-[1.5px] border-white bg-[#D9D9D94A] px-4 lg:w-[250px]"
                     required
                   />
                 </div>

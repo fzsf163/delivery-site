@@ -24,7 +24,7 @@ const Dropdown = ({
   };
 
   return (
-    <div className="relative w-52 sm:w-64">
+    <div className="relative w-64">
       <input
         type="hidden"
         name={"freightForm"}
@@ -71,7 +71,7 @@ export default function DropdownInput() {
   const options = ["Door To Door", "Freight"];
 
   return (
-    <div className="h-[40px] w-full rounded-[10px] px-2 lg:w-[250px]">
+    <div className="h-[40px] rounded-[10px] px-2 lg:w-[250px]">
       <Dropdown
         options={options}
         placeholder="Select"
