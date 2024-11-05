@@ -1,0 +1,20 @@
+[
+  {
+    "bgImage": "/road.png",
+    "name": "road",
+    "sub": "Land Freight Transportation",
+    "body": "For deliveries that don’t need to go by air, we also offer land transport. We use trucks to safely get your packages where they need to go, whether it’s nearby or far away."
+  },
+  {
+    "bgImage": "/plane.png",
+    "name": "air",
+    "sub": "Air Freight Transportation",
+    "body": "If you need to send something quickly, our air freight service is perfect! We’ll help you get your packages on a plane, so they can reach their destination fast."
+  },
+  {
+    "bgImage": "/water.png",
+    "name": "water",
+    "sub": "Ship Freight Transportation",
+    "body": " Get your goods delivered quickly and easily! We help move packages from one place to another, even across countries, and you can track everything step by step."
+  }
+]
