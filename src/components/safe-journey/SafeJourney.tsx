@@ -15,7 +15,7 @@ export default function SafeJourney() {
           time, every time.
         </p>
         <a href="#getQuote">
-          <button className="plus-jakarta-sans-600 mt-[32px] rounded-[10px] bg-white p-[10px_20px_10px_20px] text-[20px] leading-[25.2px] text-[#18347B]">
+          <button className="plus-jakarta-sans-600 mt-[32px] rounded-[10px] bg-white p-[10px_20px_10px_20px] text-[20px] leading-[25.2px] text-red-600">
             Get a Quote
           </button>
         </a>
