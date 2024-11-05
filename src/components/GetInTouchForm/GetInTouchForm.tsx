@@ -66,8 +66,8 @@ export default function GetInTouchForm() {
       id="getQuote"
     >
       <form onSubmit={(e) => onSubmit(e)}>
-        <div className="h-full w-full bg-red-500/40 py-5 sm:p-10 lg:py-4">
-          <div className="mx-auto flex h-full w-full flex-wrap sm:flex-nowrap items-center justify-center gap-5 xl:gap-[147px]">
+        <div className="h-full w-full bg-gradient-to-b from-red-500/20 to-red-600/70 py-5 sm:p-10 lg:py-4">
+          <div className="mx-auto flex h-full w-full flex-wrap items-center justify-center gap-5 sm:flex-nowrap xl:gap-[147px]">
             <div className="w-full space-y-[24px]">
               <h1 className="plus-jakarta-sans-700 mx-auto h-auto w-full text-center text-2xl text-white sm:text-4xl lg:h-[120px] lg:w-[528px] lg:text-[48px] lg:leading-[60.48px]">
                 We always follow the best way of logistics{" "}
@@ -195,7 +195,7 @@ export default function GetInTouchForm() {
                 </div>
               </div>
               {/* freight & Load */}
-              <div className="flex flex-col sm:items-center justify-start gap-5 sm:flex-row lg:gap-[30px]">
+              <div className="flex flex-col justify-start gap-5 sm:flex-row sm:items-center lg:gap-[30px]">
                 {/* email */}
                 <div className="mt-[21px] flex flex-col space-y-[10px]">
                   <label

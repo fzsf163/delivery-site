@@ -29,7 +29,7 @@ export default function Process() {
           }}
           className="relative top-[98px] z-10 h-[349px] w-[379px] rounded-[20px]"
         >
-          <div className="relative h-full w-full rounded-[20px] bg-gradient-to-t from-red-500/40 to-red-600/40 text-white">
+          <div className="relative h-full w-full rounded-[20px] bg-gradient-to-b from-red-500/20 to-red-600/70 text-white">
             <div className="absolute bottom-0 left-0 flex flex-col items-start gap-5 p-[40px_20px] text-white">
               <p className="plus-jakarta-sans-700 text-[24px] leading-[30.24px]">
                 Receive Packages
@@ -54,7 +54,7 @@ export default function Process() {
           }}
           className="relative top-[280px] z-10 h-[349px] w-[379px] rounded-[20px]"
         >
-          <div className="relative h-full w-full rounded-[20px] bg-gradient-to-t from-red-500/40 to-red-600/40 text-white">
+          <div className="relative h-full w-full rounded-[20px] bg-gradient-to-b from-red-500/20 to-red-600/70 text-white">
             <div className="absolute bottom-0 left-0 flex flex-col items-start gap-5 p-[40px_20px] text-white">
               <p className="plus-jakarta-sans-700 text-[24px] leading-[30.24px]">
                 Transport Packages
@@ -79,7 +79,7 @@ export default function Process() {
           }}
           className="z-10 h-[349px] w-[379px] rounded-[20px]"
         >
-          <div className="relative h-full w-full rounded-[20px] bg-gradient-to-t from-red-500/40 to-red-600/40 text-white">
+          <div className="relative h-full w-full rounded-[20px] bg-gradient-to-b from-red-500/20 to-red-600/70 text-white">
             <div className="absolute bottom-0 left-0 flex flex-col items-start gap-5 p-[40px_20px] text-white">
               <p className="plus-jakarta-sans-700 text-[24px] leading-[30.24px]">
                 Deliver Packages
