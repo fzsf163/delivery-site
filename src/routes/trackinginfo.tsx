@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
+import parcel from "/parcel-icon-svgrepo-com.svg";
 type Track = {
   id: string;
   tracking_id: string;
@@ -76,30 +77,31 @@ function TrackingData() {
       <div className="mx-auto flex w-fit items-center justify-between gap-10">
         <div className="inline-flex w-full flex-col items-start gap-5">
           {trackingDetails.map((t) => {
-            const isCurrentStep =
-              Number(data?.tracking_status) === Number(t.number);
-            const isReachedStep =
-              Number(data?.tracking_status) >= Number(t.number);
-            const isDeliveredStep = t.label === "delivered";
             return (
               <div
                 key={t.label}
                 className="flex items-start justify-center gap-4"
               >
                 <div className="flex flex-col items-center justify-center gap-5">
+                  {Number(data?.tracking_status) === Number(t.number) ? (
+                    <div className="mx-auto flex size-10 items-center justify-center rounded-full bg-green-600">
+                      <img
+                        src={parcel}
+                        alt=""
+                        className="size-6 animate-pulse rounded-full"
+                      />
+                    </div>
+                  ) : Number(data?.tracking_status) > Number(t.number) ? (
+                    <div className="mx-auto size-10 rounded-full bg-red-500">
+                      <Iconcheck></Iconcheck>
+                    </div>
+                  ) : (
+                    <div className="mx-auto size-10 rounded-full border">
+                      <Iconcheck></Iconcheck>
+                    </div>
+                  )}
                   <div
-                    className={`mx-auto size-10 rounded-full ${isCurrentStep ? "animate-pulse" : ""} ${
-                      isDeliveredStep && isCurrentStep
-                        ? "bg-green-500"
-                        : isReachedStep
-                          ? "bg-red-500"
-                          : "border"
-                    }`}
-                  >
-                    <Iconcheck></Iconcheck>
-                  </div>
-                  <div
-                    className={`h-1 w-full rotate-90 ${t.label === "delivered" ? "hidden" : ""} ${Number(data?.tracking_status) >= Number(t.number) ? "bg-red-600" : "border"}`}
+                    className={`h-1 w-full rotate-90 ${t.label === "delivered" ? "hidden" : ""} ${Number(data?.tracking_status) > Number(t.number) ? "bg-red-600" : "border"}`}
                   ></div>
                 </div>
                 <p className="mt-3 flex items-start gap-14 text-xs font-bold capitalize sm:mt-1 sm:text-xl md:gap-44">
