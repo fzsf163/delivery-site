@@ -18,7 +18,7 @@ const boxes = [
   {
     img: twoGuys,
     titleText: "Visit our office",
-    des: "28 Street, New York City, USA",
+    des: "House 4. Road 5. Sector 1. Uttara Dhaka 1230",
   },
 ];
 
