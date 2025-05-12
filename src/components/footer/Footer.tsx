@@ -99,7 +99,7 @@ export default function Footer() {
                   Info@upexworldbd.com
                 </a>
                 <a
-                  href="mailto:info@upexworldbd.com"
+                  href="mailto:query@upexworldbd.com"
                   className="plus-jakarta-sans-500 flex items-center justify-start gap-[10px] text-wrap text-center text-[18px] leading-[25.2px]"
                 >
                   <span>
@@ -158,30 +158,42 @@ export default function Footer() {
         <div className="hidden h-[98px] w-full items-center justify-between rounded-[20px] bg-red-600 p-[10px] xl:flex">
           {/* mail & phone */}
           <div className="flex h-full items-center justify-start gap-[28px]">
-            <div className="h-[78px] w-[298px] rounded-[15px] bg-[#FFFFFF5E] p-[23px_21px]">
-              <p className="plus-jakarta-sans-500 flex items-center justify-center gap-[10px] text-center text-[18px] leading-[25.2px] text-white">
+            <div className="flex h-[78px] w-[298px] flex-col items-start justify-center gap-1 rounded-[15px] bg-[#FFFFFF5E] p-[23px_21px]">
+              <a
+                href="mailto:info@upexworldbd.com"
+                className="plus-jakarta-sans-500 flex items-center justify-center gap-[10px] text-center text-[16px] leading-[25.2px] text-white"
+              >
                 <span>
                   <img src={mailLogo} alt="" className="size-[32px]" />
                 </span>{" "}
                 Info@upexworldbd.com
-              </p>
-            </div>
-            <div className="h-[78px] w-[298px] rounded-[15px] bg-[#FFFFFF5E] p-[23px_21px]">
+              </a>
               <a
-                href="tel:+8801711473954"
-                className="plus-jakarta-sans-500 flex items-center justify-center gap-[10px] text-center text-[18px] leading-[25.2px] text-white"
+                href="mailto:query@upexworldbd.com"
+                className="plus-jakarta-sans-500 flex items-center justify-center gap-[10px] text-center text-[16px] leading-[25.2px] text-white"
               >
                 <span>
-                  <img src={phoneLogo} alt="" className="size-[32px]" />
+                  <img src={mailLogo} alt="" className="size-[32px]" />
+                </span>{" "}
+                query@upexworldbd.com
+              </a>
+            </div>
+            <div className="flex h-[78px] w-[298px] flex-col items-start justify-center gap-2 rounded-[15px] bg-[#FFFFFF5E] p-[23px_21px]">
+              <a
+                href="tel:+8801711473954"
+                className="plus-jakarta-sans-500 flex items-center justify-center gap-[10px] text-center text-[16px] leading-[25.2px] text-white"
+              >
+                <span>
+                  <img src={phoneLogo} alt="" className="size-[24px]" />
                 </span>{" "}
                 +8801896005890
               </a>
               <a
                 href="tel:+8801711473954"
-                className="plus-jakarta-sans-500 flex items-center justify-center gap-[10px] text-center text-[18px] leading-[25.2px] text-white"
+                className="plus-jakarta-sans-500 flex items-center justify-center gap-[10px] text-center text-[16px] leading-[25.2px] text-white"
               >
                 <span>
-                  <img src={phoneLogo} alt="" className="size-[32px]" />
+                  <img src={phoneLogo} alt="" className="size-[24px]" />
                 </span>{" "}
                 +8801711473954
               </a>
