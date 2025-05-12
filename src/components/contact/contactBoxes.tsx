@@ -12,8 +12,8 @@ const boxes = [
   {
     img: closeUpOffice,
     titleText: "Call us",
-    des: "+880 215 2580 325",
-    des2: "+880 215 2580 325",
+    des: "+880 17114 73954",
+    des2: "+880 1896 005890",
   },
   {
     img: twoGuys,

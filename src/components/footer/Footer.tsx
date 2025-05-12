@@ -88,15 +88,27 @@ export default function Footer() {
               <p className="plus-jakarta-sans-600 text-[24px] leading-[30.24px] text-text-color">
                 Contact
               </p>
-              <div className="sm:w-[298px] rounded-[15px]">
-                <p className="plus-jakarta-sans-500 flex items-center justify-start gap-[10px] text-wrap text-center text-[18px] leading-[25.2px]">
+              <div className="flex flex-col items-start justify-center gap-3 rounded-[15px] bg-[#FFFFFF5E] p-[23px_21px] sm:w-[298px]">
+                <a
+                  href="mailto:info@upexworldbd.com"
+                  className="plus-jakarta-sans-500 flex items-center justify-start gap-[10px] text-wrap text-center text-[18px] leading-[25.2px]"
+                >
                   <span>
                     <img src={mailBlue} alt="" className="size-[32px]" />
                   </span>{" "}
                   Info@upexworldbd.com
-                </p>
+                </a>
+                <a
+                  href="mailto:info@upexworldbd.com"
+                  className="plus-jakarta-sans-500 flex items-center justify-start gap-[10px] text-wrap text-center text-[18px] leading-[25.2px]"
+                >
+                  <span>
+                    <img src={mailBlue} alt="" className="size-[32px]" />
+                  </span>{" "}
+                  qurey@upexworldbd.com
+                </a>
               </div>
-              <div className="sm:w-[298px] rounded-[15px]">
+              <div className="flex w-[298px] flex-col items-start justify-center gap-3 rounded-[15px] bg-[#FFFFFF5E] p-[23px_21px]">
                 <a
                   href="tel:+8801711473954"
                   className="plus-jakarta-sans-500 flex items-center justify-start gap-[10px] text-center text-[18px] leading-[25.2px]"
@@ -105,6 +117,15 @@ export default function Footer() {
                     <img src={phoneblue} alt="" className="size-[32px]" />
                   </span>{" "}
                   +8801711473954
+                </a>
+                <a
+                  href="tel:+8801711473954"
+                  className="plus-jakarta-sans-500 flex items-center justify-start gap-[10px] text-center text-[18px] leading-[25.2px]"
+                >
+                  <span>
+                    <img src={phoneblue} alt="" className="size-[32px]" />
+                  </span>{" "}
+                  +8801896005890
                 </a>
               </div>
               {/* follow */}
@@ -146,6 +167,15 @@ export default function Footer() {
               </p>
             </div>
             <div className="h-[78px] w-[298px] rounded-[15px] bg-[#FFFFFF5E] p-[23px_21px]">
+              <a
+                href="tel:+8801711473954"
+                className="plus-jakarta-sans-500 flex items-center justify-center gap-[10px] text-center text-[18px] leading-[25.2px] text-white"
+              >
+                <span>
+                  <img src={phoneLogo} alt="" className="size-[32px]" />
+                </span>{" "}
+                +8801896005890
+              </a>
               <a
                 href="tel:+8801711473954"
                 className="plus-jakarta-sans-500 flex items-center justify-center gap-[10px] text-center text-[18px] leading-[25.2px] text-white"
