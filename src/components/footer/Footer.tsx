@@ -76,7 +76,11 @@ export default function Footer() {
                           key={index + options}
                           className="plus-jakarta-sans-400 pb-[24px] text-[18px] leading-[25.2px] text-white"
                         >
-                          {options}
+                          <a
+                            href={`${options.toLowerCase() === "home" ? "/" : options.toLowerCase()}`}
+                          >
+                            {options}
+                          </a>
                         </p>
                       );
                     })}
