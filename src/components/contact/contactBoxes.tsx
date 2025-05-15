@@ -6,8 +6,8 @@ const boxes = [
   {
     img: emailMsg,
     titleText: "Send us mail",
-    des: "info@upexbd.com",
-    des2: "contact@upexbd.com",
+    des: "info@upexworldbd.com",
+    des2: "query@upexworldbd.com",
   },
   {
     img: closeUpOffice,

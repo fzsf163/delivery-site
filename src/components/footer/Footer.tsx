@@ -100,7 +100,7 @@ export default function Footer() {
                   <span>
                     <img src={mailBlue} alt="" className="size-[32px]" />
                   </span>{" "}
-                  Info@upexworldbd.com
+                  info@upexworldbd.com
                 </a>
                 <a
                   href="mailto:query@upexworldbd.com"
@@ -170,7 +170,7 @@ export default function Footer() {
                 <span>
                   <img src={mailLogo} alt="" className="size-[32px]" />
                 </span>{" "}
-                Info@upexworldbd.com
+                info@upexworldbd.com
               </a>
               <a
                 href="mailto:query@upexworldbd.com"
